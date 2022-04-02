@@ -1,0 +1,45 @@
+@import '../variables';
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-accent;
+    padding: 2rem 1.5rem;
+    img {
+        width: 25%;
+    }
+    nav {
+        display: flex;
+        align-items: flex-end;
+        a {
+            color: $color-text-main;
+            text-decoration: none;
+            position: relative;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+        a:last-of-type {
+            margin-right: 0;
+        }
+        /* Code for underline animation from css-irl.info */
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0.125em;
+            background-color: $color-accent;
+            opacity: 1;
+        }
+        a:not(.link-active)::after {
+            transition: opacity 300ms, transform 300ms;
+            transform: scale(0);
+            transform-origin: center;
+        }
+        a:not(.link-active):hover::after,
+        a:not(.link-active):focus::after {
+            transform: scale(1);
+        }
+    }
+}

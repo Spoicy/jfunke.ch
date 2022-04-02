@@ -1,0 +1,50 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #CB99C9;
+  padding: 2rem 1.5rem;
+}
+.site-header img {
+  width: 25%;
+}
+.site-header nav {
+  display: flex;
+  align-items: flex-end;
+  /* Code for underline animation from css-irl.info */
+}
+.site-header nav a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.site-header nav a:last-of-type {
+  margin-right: 0;
+}
+.site-header nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125em;
+  background-color: #CB99C9;
+  opacity: 1;
+}
+.site-header nav a:not(.link-active)::after {
+  transition: opacity 300ms, transform 300ms;
+  transform: scale(0);
+  transform-origin: center;
+}
+.site-header nav a:not(.link-active):hover::after,
+.site-header nav a:not(.link-active):focus::after {
+  transform: scale(1);
+}
+
+.site-container {
+  font-family: "Inter", sans-serif;
+}
+
+/* Components */
+/* Pages & Templates */
