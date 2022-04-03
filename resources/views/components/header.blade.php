@@ -7,7 +7,7 @@
         "hContact" => ["/contact", "Contact"],
     ];
 @endphp
-<header class="site-header">
+<header class="site-header bg-main">
     <img src="img/logo.svg" alt="Logo">
     <nav>
         @foreach ($links as $key => $data)
