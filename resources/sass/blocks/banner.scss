@@ -1,0 +1,43 @@
+.block-banner {
+    height: 500px;
+    width: calc(100%);
+    background-color: #E2CCFF;
+    .container {
+        position: relative;
+    }
+    .main-text, img {
+        position: absolute;
+    }
+    .main-text {
+        h1 {
+            font-weight: 700;
+        }
+        p {
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+    }
+    .banner-left {
+        div {
+            left: 10%;
+        }
+        img {
+            right: 10%;
+        }
+    }
+    .banner-right {
+        div {
+            right: 10%;
+        }
+        img {
+            left: 10%;
+        }
+    }
+    img {
+        height: 100%;
+    }
+}

@@ -3,12 +3,16 @@
 @use 'components/footer';
 @use 'components/section';
 
+/* Blocks */
+@use 'blocks/banner';
+
 /* Pages & Templates */
 @use 'pages/webpage';
 
 /* Variables */
 @import 'variables';
 
+/* Background specific styling */
 .bg-main {
     background-color: $color-bg-main;
     color: $color-text-main;
@@ -29,6 +33,26 @@
         transition: color 0.25s ease;
         &:hover {
             color: $color-text-main-dark-accent;
+        }
+    }
+}
+
+/* Overflow styling */
+.overflow-hidden {
+    .center-y {
+        width: 100%;
+        transform: translateY(-50%);
+        top: 50%;
+        position: relative;
+    }
+}
+
+/* Section type styling */
+.full-width {
+    .row {
+        margin: 0;
+        .col-12 {
+            padding: 0;
         }
     }
 }
