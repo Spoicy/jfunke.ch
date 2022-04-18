@@ -1,12 +1,39 @@
 @include('components/section', [
     'type' => 'full-width',
     'blocks' => [
-        'blocks/banner' => [
+        [
+            'block' => 'blocks/banner',
             'imgsrc' => 'img/banner.png',
             'imgalt' => 'Banner',
             'heading' => 'Hi there!',
             'subtext' => 'I\'m a 21-year-old web developer that specializes in PHP and Backend Development.',
             'textdir' => 'left'
+        ]
+    ]
+])
+@include('components/section', [
+    'type' => 'normal',
+    'blocks' => [
+        [
+            'block' => 'blocks/card',
+            'type' => 'text',
+            'header' => 'Card title',
+            'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
+            'class' => 'card-accent'
+        ],
+        [
+            'block' => 'blocks/card',
+            'type' => 'icon',
+            'header' => 'chart-simple',
+            'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
+            'class' => 'card-light'
+        ],
+        [
+            'block' => 'blocks/card',
+            'type' => 'text',
+            'header' => 'Card title',
+            'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
+            'class' => 'card-neutral'
         ]
     ]
 ])

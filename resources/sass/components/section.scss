@@ -1,5 +1,7 @@
 @import '../variables';
 
 .site-section {
-
+    &.container {
+        margin-top: 1rem;
+    }
 }

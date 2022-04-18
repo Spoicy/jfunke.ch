@@ -17,15 +17,15 @@
     }
 @endphp
 @if ($type == "full-width")
-    <div class="full-width">
+    <div class="full-width site-section">
 @else
-    <div class="container">
+    <div class="container site-section">
 @endif
     @if (count($blocks) > 0 && count($blocks) < 5)
         <div class="row">
-            @foreach ($blocks as $block => $data)
+            @foreach ($blocks as $data)
                 <div class="{{$classes}}">
-                    @include($block, ['data' => $data])
+                    @include($data['block'], ['data' => $data])
                 </div>
             @endforeach
         </div>
