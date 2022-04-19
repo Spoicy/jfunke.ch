@@ -11,7 +11,7 @@
 <header class="site-header bg-main">
     <div class="container d-flex">
         <img src="img/logo.svg" alt="Logo">
-        <nav>
+        <nav class="d-md-flex d-none">
             @foreach ($links as $key => $data)
                 @if ($key == $nav)
                     <a class="link-active" href="{{$data[0]}}" id="{{$key}}">{{$data[1]}}</a>

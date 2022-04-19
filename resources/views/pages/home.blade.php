@@ -17,23 +17,34 @@
         [
             'block' => 'blocks/card',
             'type' => 'text',
-            'header' => 'Card title',
+            'heading' => 'Card title',
             'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
             'class' => 'card-accent'
         ],
         [
             'block' => 'blocks/card',
             'type' => 'icon',
-            'header' => 'chart-simple',
+            'heading' => 'chart-simple',
             'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
             'class' => 'card-light'
         ],
         [
             'block' => 'blocks/card',
             'type' => 'text',
-            'header' => 'Card title',
+            'heading' => 'Card title',
             'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
             'class' => 'card-neutral'
+        ]
+    ]
+])
+@include('components/section', [
+    'type' => 'normal',
+    'blocks' => [
+        [
+            'block' => 'blocks/text',
+            'heading' => 'Text title',
+            'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
+            'textdir' => 'left'
         ]
     ]
 ])

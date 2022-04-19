@@ -9,3 +9,15 @@
         }
     }
 }
+@media (max-width: 767.98px) and (min-width: 576px) {
+    .site-footer {
+        .container span {
+            &.text-left {
+                width: 40%;
+            }
+            &.text-right {
+                width: 60%;
+            }
+        }
+    }
+}

@@ -11,7 +11,6 @@
             width: 25%;
         }
         nav {
-            display: flex;
             align-items: flex-end;
             a {
                 position: relative;
@@ -40,6 +39,26 @@
             a:not(.link-active):hover::after,
             a:not(.link-active):focus::after {
                 transform: scale(1);
+            }
+        }
+    }
+}
+
+/* Media queries */
+@media (max-width: 991.98px) {
+    .site-header {
+        .container {
+            nav a {
+                font-size: 1.375rem;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .site-header {
+        .container {
+            img {
+                width: 40%;
             }
         }
     }

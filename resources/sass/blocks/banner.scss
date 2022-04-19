@@ -1,3 +1,5 @@
+@import '../variables';
+
 .block-banner {
     height: 500px;
     width: calc(100%);
@@ -16,6 +18,8 @@
             font-weight: 600;
             font-size: 1.125rem;
         }
+        color: $color-text-main-dark;
+        text-shadow: 2px 2px 5px #999;
         z-index: 1;
         top: 50%;
         transform: translateY(-50%);
@@ -39,5 +43,39 @@
     }
     img {
         height: 100%;
+    }
+}
+/* Media queries */
+@media (max-width: 767.98px) {
+    .block-banner {
+        .main-text {
+            width: 50%;
+        }
+        .banner-left {
+            div {
+                left: 15px;
+            }
+            img {
+                right: 15px;
+            }
+        }
+        .banner-right {
+            div {
+                right: 15px;
+            }
+            img {
+                left: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .block-banner {
+        .main-text {
+            width: 95%;
+            top: auto;
+            transform: none;
+            bottom: 10%;
+        }
     }
 }
