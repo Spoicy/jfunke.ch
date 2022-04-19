@@ -2,6 +2,7 @@
 
 .site-header {
     border-bottom: 2px solid $color-bg-accent;
+    flex: none;
     .container {
         display: flex;
         justify-content: space-between;

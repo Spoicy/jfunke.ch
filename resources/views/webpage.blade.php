@@ -14,7 +14,9 @@
 <body>
     <div class="site-container">
         @include('components/header')
-        @include($template)
+        <div class="template-container">
+            @include($template)
+        </div>
         @include('components/footer')
     </div>
 </body>
