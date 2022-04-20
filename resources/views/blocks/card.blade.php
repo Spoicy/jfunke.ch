@@ -3,7 +3,7 @@
         @if ($data["type"] == "text")
             <h3>{{$data["heading"]}}</h3>
         @else
-            <i class="fa-solid fa-{{$data["heading"]}}"></i>
+            <i class="{{$data["heading"]}}"></i>
         @endif
         <p>{{$data["text"]}}</p>
     </div>
