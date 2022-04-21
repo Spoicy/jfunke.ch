@@ -47,6 +47,12 @@
         top: 50%;
         position: relative;
     }
+    .center-x {
+        height: 100%;
+        transform: translateX(-50%);
+        left: 50%;
+        position: relative;
+    }
 }
 
 /* Section type styling */

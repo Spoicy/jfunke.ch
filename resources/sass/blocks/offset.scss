@@ -6,12 +6,9 @@
         max-height: 250px
     }
     .main-img {
-        overflow: hidden;
-        img {
-            width: 100%;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+        .img-inner {
+            overflow: hidden;
+            height: 100%;
         }
     }
     &.offset-left {

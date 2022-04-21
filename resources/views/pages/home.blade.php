@@ -45,6 +45,7 @@
             'heading' => 'Projects',
             'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
             'offset' => 'left',
+            'imgpath' => 'img/imgtest.png',
             'button' => 'View portfolio',
             'link' => '/portfolio'
         ]

@@ -19,5 +19,6 @@
         </div>
         @include('components/footer')
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
