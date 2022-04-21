@@ -1,0 +1,41 @@
+@import '../variables';
+
+.block-offset {
+    min-height: 200px;
+    .main-img, .main-text {
+        max-height: 250px
+    }
+    .main-img {
+        overflow: hidden;
+        img {
+            width: 100%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &.offset-left {
+        .main-img {
+            order: 1;
+        }
+        .main-text {
+            order: 2;
+        }
+    }
+    &.offset-right {
+        .main-img {
+            order: 2;
+        }
+        .main-text {
+            order: 1;
+        }
+    }
+    .text-outer {
+        height: 100%;
+        padding: 2rem;
+        background-color: $color-bg-neutral;
+        .text-inner {
+            margin: auto;
+        }
+    }
+}

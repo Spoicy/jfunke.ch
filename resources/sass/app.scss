@@ -6,6 +6,7 @@
 /* Blocks */
 @use 'blocks/banner';
 @use 'blocks/card';
+@use 'blocks/offset';
 
 /* Pages & Templates */
 @use 'pages/webpage';
@@ -55,6 +56,15 @@
         .col-12 {
             padding: 0;
         }
+    }
+}
+
+/* Button styling */
+.btn.btn-accent {
+    background-color: $color-bg-accent;
+    color: $color-text-main-dark;
+    &:hover {
+        color: $color-text-main-dark-accent;
     }
 }
 

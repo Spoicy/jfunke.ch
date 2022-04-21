@@ -41,10 +41,12 @@
     'type' => 'normal',
     'blocks' => [
         [
-            'block' => 'blocks/text',
-            'heading' => 'Text title',
+            'block' => 'blocks/offset',
+            'heading' => 'Projects',
             'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum volutpat posuere. Maecenas malesuada semper leo. Donec tincidunt venenatis lectus.',
-            'textdir' => 'left'
+            'offset' => 'left',
+            'button' => 'View portfolio',
+            'link' => '/portfolio'
         ]
     ]
 ])

@@ -21,13 +21,13 @@
 @else
     <div class="container site-section">
 @endif
-    @if (count($blocks) > 0 && count($blocks) < 5)
-        <div class="row">
-            @foreach ($blocks as $data)
-                <div class="{{$classes}}">
-                    @include($data['block'], ['data' => $data])
-                </div>
-            @endforeach
-        </div>
-    @endif
+@if (count($blocks) > 0 && count($blocks) < 5)
+    <div class="row">
+        @foreach ($blocks as $data)
+            <div class="{{$classes}}">
+                @include($data['block'], ['data' => $data])
+            </div>
+        @endforeach
+    </div>
+@endif
 </div>
