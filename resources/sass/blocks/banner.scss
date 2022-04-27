@@ -78,5 +78,13 @@
             transform: none;
             bottom: 10%;
         }
+        .banner-left img {
+            right: 50%;
+            transform: translateX(50%);
+        }
+        .banner-right img {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
