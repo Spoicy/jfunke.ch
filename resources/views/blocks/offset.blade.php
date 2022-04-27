@@ -1,3 +1,4 @@
+{{-- TODO: Make mobile responsive --}}
 <div class="block-offset offset-{{$data['offset']}} row">
     <div class="main-img col-md-4 col-xs-12">
         <div class="img-inner overflow-hidden">

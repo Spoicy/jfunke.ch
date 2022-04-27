@@ -20,7 +20,3 @@ Route::get('/', function () {
         'nav' => 'hHome'
     ]);
 });
-
-Route::get('/preview', function () {
-    return view('preview');
-});

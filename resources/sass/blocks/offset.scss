@@ -32,7 +32,24 @@
         padding: 2rem;
         background-color: $color-bg-neutral;
         .text-inner {
-            margin: auto;
+            margin: auto 0;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .block-offset {
+        .main-img {
+            max-height: 150px;
+            
+        }
+        &.offset-right {
+            .main-img {
+                order: 1;
+            }
+            .main-text {
+                order: 2;
+            }
         }
     }
 }
