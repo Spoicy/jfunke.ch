@@ -9,9 +9,16 @@ function overflowUpdate(e) {
         console.log("test")
         var height = child.clientHeight;
         var width = child.clientWidth;
-        var heightCheck = 250;
-        if (window.innerWidth < 768) {
-            heightCheck = 150;
+        if (child.name == "offset-img") {
+            var heightCheck = 250;
+            if (window.innerWidth < 768) {
+                heightCheck = 150;
+            }
+        } else {
+            var heightCheck = 500;
+            if (window.innerWidth < 768) {
+                heightCheck = 400;
+            }
         }
         if (child.classList.contains("center-y") && height < heightCheck) {
             child.classList.remove("center-y");

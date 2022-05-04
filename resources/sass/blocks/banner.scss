@@ -1,14 +1,17 @@
-@import '../variables';
+@use '../variables' as *;
 
 .block-banner {
     height: 500px;
     width: calc(100%);
     background-color: #E2CCFF;
-    .container {
+    .inner-banner:not(.full-image) {
         position: relative;
-    }
-    .main-text, img {
-        position: absolute;
+        .main-text, img {
+            position: absolute;
+        }
+        img {
+            height: 100%;
+        }
     }
     .main-text {
         h1 {
@@ -40,9 +43,6 @@
         img {
             left: 10%;
         }
-    }
-    img {
-        height: 100%;
     }
 }
 /* Media queries */

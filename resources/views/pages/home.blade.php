@@ -3,6 +3,7 @@
     'blocks' => [
         [
             'block' => 'blocks/banner',
+            'type' => 'home',
             'imgsrc' => 'img/banner.png',
             'imgalt' => 'Banner',
             'heading' => 'Hi there!',
