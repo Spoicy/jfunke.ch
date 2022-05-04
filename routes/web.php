@@ -20,3 +20,11 @@ Route::get('/', function () {
         'nav' => 'hHome'
     ]);
 });
+
+Route::get('/about/', function () {
+    return view('webpage', [
+        'title' => 'About me',
+        'template' => 'pages/about',
+        'nav' => 'hAbout'
+    ]);
+});
