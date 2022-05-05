@@ -44,10 +44,8 @@
             left: 10%;
         }
     }
-}
-/* Media queries */
-@media (max-width: 767.98px) {
-    .block-banner {
+    /* Media queries */
+    @media (max-width: 767.98px) {
         height: 400px;
         .main-text {
             width: 50%;
@@ -69,9 +67,7 @@
             }
         }
     }
-}
-@media (max-width: 575.98px) {
-    .block-banner {
+    @media (max-width: 575.98px) {
         .main-text {
             width: 95%;
             top: auto;
