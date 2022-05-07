@@ -6,10 +6,9 @@ function overflowUpdate(e) {
     var parentwidth = e[0].target.clientWidth;
     var child = e[0].target.childNodes[1];
     if (child.complete && child.naturalHeight !== 0) {
-        console.log("test")
         var height = child.clientHeight;
         var width = child.clientWidth;
-        if (child.name == "offset-img") {
+        if (child.name == "offset-img" && child.name == "subheading-img") {
             var heightCheck = 250;
             if (window.innerWidth < 768) {
                 heightCheck = 150;

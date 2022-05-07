@@ -2,6 +2,9 @@
 
 .block-offset {
     min-height: 200px;
+    h3 {
+        color: $color-text-main !important;
+    }
     .main-img, .main-text {
         max-height: 250px
     }

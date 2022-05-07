@@ -2,4 +2,7 @@
 
 .site-section {
     margin-bottom: 2rem;
+    &.compact-section {
+        margin-bottom: 0.5rem;
+    }
 }

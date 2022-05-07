@@ -1,11 +1,22 @@
+@use '../variables' as *;
+
 .site-container {
     font-family: 'Inter', sans-serif;
-    h1, h2, h3, h4 {
-        font-family: 'Ubuntu', sans-serif;
-    }
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    h1, h2, h3, h4 {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    h2, h3 {
+        color: $color-text-accent;
+    }
+    h2 {
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.125rem;
+    }
     .template-container {
         flex: 1;
     }

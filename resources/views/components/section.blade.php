@@ -15,12 +15,16 @@
         default:
             break;
     }
+    if ($type == "full-width") {
+        $sectionClass = 'full-width site-section';
+    } else {
+        $sectionClass = 'container site-section';
+    }
+    if (isset($gap) && $gap == 'compact') {
+        $sectionClass .= ' compact-section';
+    }
 @endphp
-@if ($type == "full-width")
-    <div class="full-width site-section">
-@else
-    <div class="container site-section">
-@endif
+<div class="{{$sectionClass}}">
 @if (count($blocks) > 0 && count($blocks) < 5)
     <div class="row">
         @foreach ($blocks as $data)
