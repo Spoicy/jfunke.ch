@@ -5,7 +5,8 @@
             'block' => 'blocks/banner',
             'type' => 'normal',
             'imgsrc' => 'img/imgtest.png',
-            'imgalt' => 'Banner'
+            'imgalt' => 'Banner',
+            'imgcenter' => 'center-y'
         ]
     ]
 ])

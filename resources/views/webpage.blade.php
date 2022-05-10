@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/f641b52779.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="site-container">
+    <div class="site-container bg-main">
         @include('components/header')
         <div class="template-container">
             @include($template)

@@ -47,6 +47,7 @@
             'text' => 'Learn even more about what I do and who I am in my About section.',
             'offset' => 'left',
             'imgpath' => 'img/imgtest.png',
+            'imgcenter' => 'center-y',
             'button' => 'More about Jae',
             'link' => '/about'
         ]
@@ -61,6 +62,7 @@
             'text' => 'I\'ve worked on various projects and designs from Frontend to Backend, utilizing newly learned languages and technologies that I\'ve picked up over the past few years.',
             'offset' => 'right',
             'imgpath' => 'img/imgtest.png',
+            'imgcenter' => 'center-y',
             'button' => 'View portfolio',
             'link' => '/portfolio'
         ]
@@ -75,6 +77,7 @@
             'text' => 'I\'ve picked up various technologies and languages over the years that I\'ve been in education, employment as well as in my own free time.',
             'offset' => 'left',
             'imgpath' => 'img/imgtest.png',
+            'imgcenter' => 'center-y',
             'button' => 'View Resume',
             'link' => '/resume'
         ]

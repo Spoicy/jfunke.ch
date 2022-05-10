@@ -1,13 +1,14 @@
 document.querySelectorAll('.overflow-hidden').forEach(item => {
     new ResizeObserver(overflowUpdate).observe(item);
+    item.addEventListener('load', overflowUpdate);
 });
 
 function overflowUpdate(e) {
     var parentwidth = e[0].target.clientWidth;
     var child = e[0].target.childNodes[1];
+    var height = child.clientHeight;
+    var width = child.clientWidth;
     if (child.complete && child.naturalHeight !== 0) {
-        var height = child.clientHeight;
-        var width = child.clientWidth;
         if (child.name == "offset-img" && child.name == "subheading-img") {
             var heightCheck = 250;
             if (window.innerWidth < 768) {

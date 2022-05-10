@@ -1,3 +1,6 @@
+/* Pages & Templates */
+@use 'pages/webpage';
+
 /* Components */
 @use 'components/header';
 @use 'components/footer';
@@ -8,9 +11,7 @@
 @use 'blocks/card';
 @use 'blocks/offset';
 @use 'blocks/subheading';
-
-/* Pages & Templates */
-@use 'pages/webpage';
+@use 'blocks/portfoliocard';
 
 /* Variables */
 @use 'variables' as *;

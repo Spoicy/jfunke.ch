@@ -1,0 +1,36 @@
+@use '../variables' as *;
+
+.block-portfoliocard {
+    padding-bottom: 1rem;
+    &, .main-card {
+        height: 100%;
+    }
+    .main-card {
+        padding: 0.75rem;
+        background-color: $color-bg-neutral;
+        transition: box-shadow 0.3s ease, background-color 0.3s ease;
+        box-shadow: 0 0 0;
+        
+        &:hover {
+            background-color: $color-bg-neutral-hover;
+            box-shadow: 0 0 0.375rem $color-text-main;
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $color-text-main;
+            }
+        }
+        h3 {
+            color: $color-text-main;
+            padding-top: 0.5rem;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}

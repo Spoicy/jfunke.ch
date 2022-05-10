@@ -28,3 +28,11 @@ Route::get('/about/', function () {
         'nav' => 'hAbout'
     ]);
 });
+
+Route::get('/portfolio/', function () {
+    return view('webpage', [
+        'title' => 'Portfolio',
+        'template' => 'pages/portfolio',
+        'nav' => 'hPortfolio'
+    ]);
+});

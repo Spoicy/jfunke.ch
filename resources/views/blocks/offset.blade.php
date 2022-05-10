@@ -2,7 +2,7 @@
 <div class="block-offset offset-{{$data['offset']}} row">
     <div class="main-img col-md-4 col-xs-12">
         <div class="img-inner overflow-hidden">
-            <img class="center-y" src="{{$data['imgpath']}}" alt="" name="offset-img">
+            <img class="{{$data['imgcenter']}}" src="{{$data['imgpath']}}" alt="" name="offset-img">
         </div>
     </div>
     <div class="main-text col-md-8 col-xs-12">

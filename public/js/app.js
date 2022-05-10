@@ -1,1 +1,252 @@
-(()=>{var e,n={80:(e,n,r)=>{r(392),r(900)},392:()=>{function e(e){var n=e[0].target.clientWidth,r=e[0].target.childNodes[1];if(r.complete&&0!==r.naturalHeight){var t=r.clientHeight,i=r.clientWidth;if("offset-img"==r.name&&"subheading-img"==r.name){var o=250;window.innerWidth<768&&(o=150)}else{o=500;window.innerWidth<768&&(o=400)}r.classList.contains("center-y")&&t<o?(r.classList.remove("center-y"),r.classList.add("center-x"),console.log("updated to x")):r.classList.contains("center-x")&&i<n&&(r.classList.remove("center-x"),r.classList.add("center-y"),console.log("updated to y"))}}document.querySelectorAll(".overflow-hidden").forEach((function(n){new ResizeObserver(e).observe(n)}))},900:()=>{new ResizeObserver((function(){console.log("testsetset"),window.innerWidth<992&&0==n?(document.querySelectorAll(".block-subheading .main-img .img-inner").forEach((function(n){e=n.childNodes[1],n.classList.add("overflow-hidden"),e.classList.add("center-y")})),n=1):window.innerWidth>=992&&1==n&&(document.querySelectorAll(".block-subheading .main-img .img-inner").forEach((function(n){e=n.childNodes[1],n.classList.remove("overflow-hidden"),e.classList.remove("center-y"),e.classList.remove("center-x")})),n=0)})).observe(document.querySelector(".block-subheading"));var e,n=0},425:()=>{}},r={};function t(e){var i=r[e];if(void 0!==i)return i.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,t),o.exports}t.m=n,e=[],t.O=(n,r,i,o)=>{if(!r){var s=1/0;for(d=0;d<e.length;d++){for(var[r,i,o]=e[d],c=!0,l=0;l<r.length;l++)(!1&o||s>=o)&&Object.keys(t.O).every((e=>t.O[e](r[l])))?r.splice(l--,1):(c=!1,o<s&&(s=o));if(c){e.splice(d--,1);var a=i();void 0!==a&&(n=a)}}return n}o=o||0;for(var d=e.length;d>0&&e[d-1][2]>o;d--)e[d]=e[d-1];e[d]=[r,i,o]},t.o=(e,n)=>Object.prototype.hasOwnProperty.call(e,n),(()=>{var e={773:0,170:0};t.O.j=n=>0===e[n];var n=(n,r)=>{var i,o,[s,c,l]=r,a=0;if(s.some((n=>0!==e[n]))){for(i in c)t.o(c,i)&&(t.m[i]=c[i]);if(l)var d=l(t)}for(n&&n(r);a<s.length;a++)o=s[a],t.o(e,o)&&e[o]&&e[o][0](),e[o]=0;return t.O(d)},r=self.webpackChunk=self.webpackChunk||[];r.forEach(n.bind(null,0)),r.push=n.bind(null,r.push.bind(r))})(),t.O(void 0,[170],(()=>t(80)));var i=t.O(void 0,[170],(()=>t(425)));i=t.O(i)})();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/app.js":
+/*!*****************************!*\
+  !*** ./resources/js/app.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+__webpack_require__(/*! ./blocks/overflow */ "./resources/js/blocks/overflow.js");
+
+__webpack_require__(/*! ./blocks/subheading */ "./resources/js/blocks/subheading.js");
+
+/***/ }),
+
+/***/ "./resources/js/blocks/overflow.js":
+/*!*****************************************!*\
+  !*** ./resources/js/blocks/overflow.js ***!
+  \*****************************************/
+/***/ (() => {
+
+document.querySelectorAll('.overflow-hidden').forEach(function (item) {
+  new ResizeObserver(overflowUpdate).observe(item);
+  item.addEventListener('load', overflowUpdate);
+});
+
+function overflowUpdate(e) {
+  var parentwidth = e[0].target.clientWidth;
+  var child = e[0].target.childNodes[1];
+  var height = child.clientHeight;
+  var width = child.clientWidth;
+
+  if (child.complete && child.naturalHeight !== 0) {
+    if (child.name == "offset-img" && child.name == "subheading-img") {
+      var heightCheck = 250;
+
+      if (window.innerWidth < 768) {
+        heightCheck = 150;
+      }
+    } else {
+      var heightCheck = 500;
+
+      if (window.innerWidth < 768) {
+        heightCheck = 400;
+      }
+    }
+
+    if (child.classList.contains("center-y") && height < heightCheck) {
+      child.classList.remove("center-y");
+      child.classList.add("center-x");
+      console.log("updated to x");
+    } else if (child.classList.contains("center-x") && width < parentwidth) {
+      child.classList.remove("center-x");
+      child.classList.add("center-y");
+      console.log("updated to y");
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./resources/js/blocks/subheading.js":
+/*!*******************************************!*\
+  !*** ./resources/js/blocks/subheading.js ***!
+  \*******************************************/
+/***/ (() => {
+
+if (document.querySelector('.block-subheading')) {
+  var subheadingImgOverflow = function subheadingImgOverflow() {
+    console.log('testsetset');
+
+    if (window.innerWidth < 992 && mode == 0) {
+      document.querySelectorAll('.block-subheading .main-img .img-inner').forEach(function (item) {
+        child = item.childNodes[1];
+        item.classList.add('overflow-hidden');
+        child.classList.add('center-y');
+      });
+      mode = 1;
+    } else if (window.innerWidth >= 992 && mode == 1) {
+      document.querySelectorAll('.block-subheading .main-img .img-inner').forEach(function (item) {
+        child = item.childNodes[1];
+        item.classList.remove('overflow-hidden');
+        child.classList.remove('center-y');
+        child.classList.remove('center-x');
+      });
+      mode = 0;
+    }
+  };
+
+  new ResizeObserver(subheadingImgOverflow).observe(document.querySelector('.block-subheading'));
+  var mode = 0;
+  var child;
+}
+
+/***/ }),
+
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"/js/app": 0,
+/******/ 			"css/app": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
+/******/ })()
+;
