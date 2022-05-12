@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.btn.btn-accent {
+    background-color: $color-bg-accent;
+    color: $color-text-main-dark;
+    &:hover {
+        color: $color-text-main-dark-accent;
+    }
+}

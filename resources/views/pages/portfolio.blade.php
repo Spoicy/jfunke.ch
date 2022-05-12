@@ -32,21 +32,24 @@
             'name' => 'jfunke.ch',
             'description' => 'The very website you\'re currently on, made entirely with Laravel.',
             'imgsrc' => 'https://spoicy.ch/upload/jfu/jfunke.png',
-            'imgalt' => 'Project image'
+            'imgalt' => 'Project image',
+            'link' => '/portfolio/jfunke'
         ],
         [
             'block' => 'blocks/portfoliocard',
             'name' => 'spoicy.ch',
             'description' => 'My hobby website, containing various programming projects.',
             'imgsrc' => 'https://spoicy.ch/upload/jfu/spoicy.png',
-            'imgalt' => 'Project image'
+            'imgalt' => 'Project image',
+            'link' => '/portfolio/spoicy'
         ],
         [
             'block' => 'blocks/portfoliocard',
             'name' => 'suprnova.dev',
-            'description' => 'A complete remake of suprnova.dev, made to be responsive.',
+            'description' => 'A complete rework of Suprnova\'s linktree page.',
             'imgsrc' => 'https://spoicy.ch/upload/jfu/suprnova.png',
-            'imgalt' => 'Project image'
+            'imgalt' => 'Project image',
+            'link' => '/portfolio/suprnova-dev'
         ]
     ]
 ])

@@ -1,3 +1,8 @@
+/* Abstracts */
+@use 'abstracts/background';
+@use 'abstracts/overflow';
+@use 'abstracts/button';
+
 /* Pages & Templates */
 @use 'pages/webpage';
 
@@ -12,69 +17,10 @@
 @use 'blocks/offset';
 @use 'blocks/subheading';
 @use 'blocks/portfoliocard';
+@use 'blocks/portfoliofull';
 
 /* Variables */
 @use 'variables' as *;
-
-/* Background specific styling */
-.bg-main {
-    background-color: $color-bg-main;
-    color: $color-text-main;
-    a, a:hover {
-        text-decoration: none;
-        color: $color-text-main;
-    }
-}
-
-.bg-accent {
-    background-color: $color-bg-accent;
-    color: $color-text-main-dark;
-    a, a:hover {
-        text-decoration: none;
-        color: $color-text-main-dark;
-    }
-    .anim-hover {
-        transition: color 0.25s ease;
-        &:hover {
-            color: $color-text-main-dark-accent;
-        }
-    }
-}
-
-/* Overflow styling */
-.overflow-hidden {
-    .center-y {
-        width: 100%;
-        transform: translateY(-50%);
-        top: 50%;
-        position: relative;
-    }
-    .center-x {
-        height: 100%;
-        transform: translateX(-50%);
-        left: 50%;
-        position: relative;
-    }
-}
-
-/* Section type styling */
-.full-width {
-    .row {
-        margin: 0;
-        .col-12 {
-            padding: 0;
-        }
-    }
-}
-
-/* Button styling */
-.btn.btn-accent {
-    background-color: $color-bg-accent;
-    color: $color-text-main-dark;
-    &:hover {
-        color: $color-text-main-dark-accent;
-    }
-}
 
 /* Media queries */
 @media (max-width: 767.98px) {

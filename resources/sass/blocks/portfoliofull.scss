@@ -1,0 +1,19 @@
+@use '../variables' as *;
+
+.block-portfoliofull {
+    padding-top: 1rem;
+    .carousel {
+        margin-bottom: 1rem;
+    }
+    a {
+        font-size: 1.125rem;
+        color: $color-text-accent;
+        &:hover {
+            color: $color-text-accent;
+            text-decoration: underline;
+        }
+    }
+    .links {
+        margin-bottom: 1rem;
+    }
+}

@@ -36,3 +36,25 @@ Route::get('/portfolio/', function () {
         'nav' => 'hPortfolio'
     ]);
 });
+/* TEMPORARY: Calls to database will be made here in final version */
+Route::get('/portfolio/{name}', function($name) {
+    switch ($name) {
+        case 'spoicy':
+            $title = 'spoicy.ch';
+            break;
+        case 'jfunke':
+            $title = 'jfunke.ch';
+            break;
+        case 'suprnova-dev':
+            $title = 'suprnova.dev';
+            break;
+        default:
+            $title = 'Not found';
+    }
+    return view('webpage', [
+        'title' => $title,
+        'template' => 'pages/project',
+        'nav' => 'hPortfolio',
+        'data' => ['name' => $name]
+    ]);
+});

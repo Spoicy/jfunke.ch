@@ -10,7 +10,7 @@
 @endphp
 <header class="site-header bg-main">
     <div class="container d-flex">
-        <img src="img/logo.svg" alt="Logo">
+        <img src="/img/logo.svg" alt="Logo">
         <nav class="d-md-flex d-none">
             @foreach ($links as $key => $data)
                 @if ($key == $nav)

@@ -5,4 +5,12 @@
     &.compact-section {
         margin-bottom: 0.5rem;
     }
+    &.full-width {
+        .row {
+            margin: 0;
+            .col-12 {
+                padding: 0;
+            }
+        }
+    }
 }

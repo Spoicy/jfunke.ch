@@ -1,0 +1,25 @@
+@use '../variables' as *;
+
+.bg-main {
+    background-color: $color-bg-main;
+    color: $color-text-main;
+    a, a:hover {
+        text-decoration: none;
+        color: $color-text-main;
+    }
+}
+
+.bg-accent {
+    background-color: $color-bg-accent;
+    color: $color-text-main-dark;
+    a, a:hover {
+        text-decoration: none;
+        color: $color-text-main-dark;
+    }
+    .anim-hover {
+        transition: color 0.25s ease;
+        &:hover {
+            color: $color-text-main-dark-accent;
+        }
+    }
+}
