@@ -6,7 +6,6 @@
             'type' => 'normal',
             'imgsrc' => 'img/imgtest.png',
             'imgalt' => 'Banner',
-            'imgcenter' => 'center-y'
         ]
     ]
 ])

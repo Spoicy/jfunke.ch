@@ -6,7 +6,7 @@
         color: $color-text-main;
     }
     .main-img, .main-text {
-        max-height: 250px
+        max-height: 250px;
     }
     .main-img {
         .img-inner {
@@ -38,10 +38,12 @@
             margin: auto 0;
         }
     }
-}
-
-@media (max-width: 767.98px) {
-    .block-offset {
+    @media (max-width: 991.98px) {
+        .main-img, .main-text {
+            max-height: 300px;
+        }
+    }
+    @media (max-width: 767.98px) {
         .main-img {
             max-height: 150px;
             

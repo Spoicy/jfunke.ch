@@ -13,6 +13,8 @@ function overflowUpdate(e) {
             var heightCheck = 250;
             if (window.innerWidth < 768) {
                 heightCheck = 150;
+            } else if (window.innerWidth < 992 && child.name == "offset-img") {
+                heightCheck = 300;
             }
         } else {
             var heightCheck = 500;
@@ -20,14 +22,14 @@ function overflowUpdate(e) {
                 heightCheck = 400;
             }
         }
-        if (child.classList.contains("center-y") && height < heightCheck) {
-            child.classList.remove("center-y");
-            child.classList.add("center-x");
-            console.log("updated to x");
-        } else if (child.classList.contains("center-x") && width < parentwidth) {
-            child.classList.remove("center-x");
-            child.classList.add("center-y");
-            console.log("updated to y");
+        if (child.classList.contains("center-3d")) {
+            if (height < heightCheck) {
+                child.style.height = "100%";
+                child.style.width = "auto";
+            } else if (width < parentwidth) {
+                child.style.width = "100%";
+                child.style.height = "auto";
+            }
         }
     }
 }

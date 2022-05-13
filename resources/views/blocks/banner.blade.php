@@ -11,7 +11,7 @@
 @else
     <div class="block-banner">
         <div class="inner-banner full-image overflow-hidden h-100">
-            <img class="{{$data['imgcenter']}}" src="{{$data['imgsrc']}}" alt="{{$data['imgalt'] ?? 'Banner'}}" name="banner-img">
+            <img class="center-3d" src="{{$data['imgsrc']}}" alt="{{$data['imgalt'] ?? 'Banner'}}" name="banner-img">
         </div>
     </div>
 @endif

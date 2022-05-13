@@ -3,7 +3,6 @@ if (document.querySelector('.block-subheading')) {
     let mode = 0;
     let child;
     function subheadingImgOverflow() {
-        console.log('testsetset');
         if (window.innerWidth < 992 && mode == 0) {
             document.querySelectorAll('.block-subheading .main-img .img-inner').forEach(item => {
                 child = item.childNodes[1];
