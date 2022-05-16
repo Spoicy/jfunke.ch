@@ -1,5 +1,6 @@
 <div class="block-contactform">
     <form action="/contact/submit" method="post">
+        @csrf
         <div class="row">
             <div class="col">
                 <label for="cFirstname">First name</label>
@@ -30,7 +31,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <button class="form-control btn btn-accent" type="submit">Submit</button>
+                <button class="form-control btn btn-accent mt-1" type="submit">Submit</button>
             </div>
         </div>
     </form>

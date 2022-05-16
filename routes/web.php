@@ -66,3 +66,5 @@ Route::get('/contact/', function() {
         'nav' => 'hContact'
     ]);
 });
+
+Route::post('/contact/submit', 'App\Http\Controllers\Contact@processContact');

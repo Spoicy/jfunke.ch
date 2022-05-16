@@ -3,7 +3,8 @@
 .btn.btn-accent {
     background-color: $color-bg-accent;
     color: $color-text-main-dark;
-    &:hover {
-        color: $color-text-main-dark-accent;
+    &:hover, &:focus {
+        background-color: $color-bg-accent-hover;
+        color: $color-text-main-dark-hover;
     }
 }
