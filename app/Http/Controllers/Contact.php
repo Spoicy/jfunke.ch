@@ -18,6 +18,12 @@ class Contact extends Controller
         $data->firstname = $request->request->get('cFirstname');
         $data->lastname = $request->request->get('cLastname');
         $data->subject = $request->request->get('cSubject');
-        Mail::to('contact@jfunke.ch')->send(new ContactForm($data));
+        try {
+            Mail::to('contact@jfunke.ch')->send(new ContactForm($data));
+            return redirect('/contact')->with('status', 1);
+        } catch (\Exception $e) {
+            return redirect('/contact')->with('status', 2);
+        }
+        
     }
 }
