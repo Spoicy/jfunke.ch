@@ -18,6 +18,6 @@ class Contact extends Controller
         $data->firstname = $request->request->get('cFirstname');
         $data->lastname = $request->request->get('cLastname');
         $data->subject = $request->request->get('cSubject');
-        Mail::to('contact@spoicy.ch')->send(new ContactForm($data));
+        Mail::to('contact@jfunke.ch')->send(new ContactForm($data));
     }
 }
