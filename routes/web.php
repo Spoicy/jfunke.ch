@@ -58,3 +58,11 @@ Route::get('/portfolio/{name}', function($name) {
         'data' => ['name' => $name]
     ]);
 });
+
+Route::get('/contact/', function() {
+    return view('webpage', [
+        'title' => 'Contact',
+        'template' => 'pages/contact',
+        'nav' => 'hContact'
+    ]);
+});

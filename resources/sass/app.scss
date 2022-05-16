@@ -15,9 +15,11 @@
 @use 'blocks/banner';
 @use 'blocks/card';
 @use 'blocks/offset';
+@use 'blocks/heading';
 @use 'blocks/subheading';
 @use 'blocks/portfoliocard';
 @use 'blocks/portfoliofull';
+@use 'blocks/contactform';
 
 /* Variables */
 @use 'variables' as *;

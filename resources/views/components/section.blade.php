@@ -30,6 +30,9 @@
     if (isset($gap) && $gap == 'compact') {
         $sectionClass .= ' compact-section';
     }
+    if (isset($first)) {
+        $sectionClass .= ' first';
+    }
 @endphp
 <div class="{{$sectionClass}}">
 @if (count($blocks) > 0 && count($blocks) < 5)

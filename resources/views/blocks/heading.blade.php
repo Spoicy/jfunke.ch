@@ -1,4 +1,4 @@
-<div class="block-heading {{$data['textdir']}}">
+<div class="block-heading {{$data['textdir'] ?? 'left'}} {{$data['first'] ?? ''}}">
     <h2>{{$data['heading']}}</h3>
     @foreach ($data['text'] as $pg)
         <p>{!!$pg!!}</p>
