@@ -68,3 +68,11 @@ Route::get('/contact/', function() {
 });
 
 Route::post('/contact/submit', 'App\Http\Controllers\Contact@processContact');
+
+Route::get('/resume/', function() {
+    return view('webpage', [
+        'title' => 'Resume',
+        'template' => 'pages/resume',
+        'nav' => 'hResume'
+    ]);
+});

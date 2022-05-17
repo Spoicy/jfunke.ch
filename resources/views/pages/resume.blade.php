@@ -9,3 +9,81 @@
         ]
     ]
 ])
+@include('components/section', [
+    'type' => 'normal',
+    'blocks' => [
+        [
+            'block' => 'blocks/heading',
+            'heading' => 'Resume',
+            'text' => [
+                'On this page, you\'ll see the various languages, frameworks, tools and technologies that I have experience with. The ones I am most experienced with, have their own detailed section. A complete list of everything I know can be found near the bottom of the page.'
+            ]
+        ]
+    ]
+])
+@include('components/section', [
+    'type' => 'normal',
+    'blocks' => [
+        [
+            'block' => 'blocks/subheading',
+            'subheadings' => [
+                [
+                    'type' => 'img',
+                    'textdir' => 'right',
+                    'subheading' => 'PHP',
+                    'text' => [
+                        'PHP has been my bread and butter ever since I first started learning it in school back in 2017. It\'s my goto language for whenever I want to get something done quickly, as it just feels like home and allows me to work quickly.',
+                        'Many of my projects, including this very website, are built with PHP. My work experience gave me the opportunity to really delve deep into it, and how to work as efficiently as possible, using all of its quirks to my advantage. If you need a PHP specialist, I\'m sure that I won\'t disappoint.'
+                    ],
+                    'imgsrc' => '/img/imgtest.png',
+                    'imgalt' => 'Image'
+                ],
+                [
+                    'type' => 'img',
+                    'textdir' => 'left',
+                    'subheading' => 'Frontend',
+                    'text' => [
+                        'Building unique and modern-looking websites using the basics has always been something that I\'ve enjoyed when doing webdev. Whether it\'s HTML, CSS, or JS, finding elegant solutions to make things look professional is one of the key factors necessary to be an experienced web developer.',
+                        'In terms of frontend libraries and frameworks, I am currently in the process of learning Vue.js, as many of the open source projects I\'m interested in use it. In the future, I hope to also add React to my arsenal of technologies as well.'
+                    ],
+                    'imgsrc' => '/img/imgtest.png',
+                    'imgalt' => 'Image'
+                ],
+                [
+                    'type' => 'list',
+                    'textdir' => 'left',
+                    'subheading' => 'Complete list',
+                    'text' => 'Here is a complete list of everything I know. The list is sorted by how experienced I am with the specified technology.',
+                    'list' => [
+                        'Languages' => [
+                            'PHP',
+                            'HTML/CSS/SCSS',
+                            'SQL',
+                            'JavaScript',
+                            'C#',
+                            'Java',
+                            'Bash/Shell',
+                            'Python'
+                        ],
+                        'Frameworks/CMS' => [
+                            'Laravel',
+                            'CC-Framework (defunct)',
+                            'Wordpress',
+                            'Drupal',
+                            'Vue',
+                            'Symfony'
+                        ],
+                        'Technologies/Tools' => [
+                            'Visual Studio Code',
+                            'DBeaver',
+                            'Plesk',
+                            'Jira',
+                            'Trello',
+                            'REST'
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+])
