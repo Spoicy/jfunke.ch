@@ -11,6 +11,7 @@
 ])
 @include('components/section', [
     'type' => 'normal',
+    'gap' => 'compact',
     'blocks' => [
         [
             'block' => 'blocks/heading',

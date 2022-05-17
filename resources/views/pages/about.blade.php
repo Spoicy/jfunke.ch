@@ -46,7 +46,7 @@
                     'subheading' => 'Fitness',
                     'text' => [
                         'I think staying in shape is one of the most important things in life, and I love taking in my surroundings and visiting new places.',
-                        'I always have Pokémon GO open while I\'m walking around, as it gives me incentive to go on long walks and jogs to reach as many locations as possible. Part of my 2022 Resolution is to go on walks more consistently, and Pokémon GO absolutely rewards consistent play. I absolutely recommend it to anybody wanting to stay in shape, as it has an awesome community and is a ton of fun with little effort.'
+                        'I always have Pokémon GO open while I\'m walking around, as it gives me incentive to stay outside and visit new locations as I take in my surroundings. Part of my 2022 Resolution is to stay in shape, and Pokémon GO is a great motivator, as well as just being fun to play.'
                     ],
                     'imgsrc' => '/img/imgtest.png',
                     'imgalt' => 'Image'
