@@ -3,6 +3,17 @@
 .site-header {
     border-bottom: 2px solid $color-bg-accent;
     flex: none;
+    .skip-nav {
+        position: absolute;
+        transform: translateY(-120%);
+        transition: transform .3s ease;
+        font-weight: 700;
+        padding: 0.25rem;
+        background-color: $color-bg-neutral;
+        &:focus {
+            transform: translateY(0);
+        }
+    }
     .container {
         display: flex;
         justify-content: space-between;

@@ -22,7 +22,7 @@
 <body>
     <div class="site-container bg-main">
         @include('components/header')
-        <div class="template-container">
+        <div class="template-container" id="main-content">
             @include($template, $data)
         </div>
         @include('components/footer')
