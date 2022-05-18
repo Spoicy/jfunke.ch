@@ -4,7 +4,7 @@
         [
             'block' => 'blocks/banner',
             'type' => 'normal',
-            'imgsrc' => 'img/imgtest.png',
+            'imgsrc' => 'https://spoicy.ch/upload/jfu/resume-banner-test.png',
             'imgalt' => 'Banner'
         ]
     ]
@@ -32,10 +32,10 @@
                     'textdir' => 'right',
                     'subheading' => 'PHP',
                     'text' => [
-                        'PHP has been my bread and butter ever since I first started learning it in school back in 2017. It\'s my goto language for whenever I want to get something done quickly, as it just feels like home and allows me to work quickly.',
+                        'PHP has been my bread and butter ever since I first started learning it in school back in 2017. It\'s my goto language for whenever I want to get something done quickly, as it just feels like home and allows me to work at peak performance.',
                         'Many of my projects, including this very website, are built with PHP. My work experience gave me the opportunity to really delve deep into it, and how to work as efficiently as possible, using all of its quirks to my advantage. If you need a PHP specialist, I\'m sure that I won\'t disappoint.'
                     ],
-                    'imgsrc' => '/img/imgtest.png',
+                    'imgsrc' => 'https://spoicy.ch/upload/jfu/php.jpg',
                     'imgalt' => 'Image'
                 ],
                 [
@@ -46,7 +46,7 @@
                         'Building unique and modern-looking websites using the basics has always been something that I\'ve enjoyed when doing webdev. Whether it\'s HTML, CSS, or JS, finding elegant solutions to make things look professional is one of the key factors necessary to be an experienced web developer.',
                         'In terms of frontend libraries and frameworks, I am currently in the process of learning Vue.js, as many of the open source projects I\'m interested in use it. In the future, I hope to also add React to my arsenal of technologies as well.'
                     ],
-                    'imgsrc' => '/img/imgtest.png',
+                    'imgsrc' => 'https://spoicy.ch/upload/jfu/resume-frontend.jpg',
                     'imgalt' => 'Image'
                 ],
                 [
@@ -69,6 +69,7 @@
                             'Laravel',
                             'CC-Framework (defunct)',
                             'Wordpress',
+                            'Bootstrap',
                             'Drupal',
                             'Vue',
                             'Symfony'

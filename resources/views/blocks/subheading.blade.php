@@ -16,7 +16,7 @@
             </div>
             <div class="main-img">
                 <div class="img-inner">
-                    <img src="{{$subdata['imgsrc']}}" alt="{{$subdata['imgalt']}}" class="" name="subheading-img">
+                    <img src="{{$subdata['imgsrc']}}" alt="{{$subdata['imgalt']}}" class="center-3d" name="subheading-img">
                 </div>
             </div>
         @elseif ($subdata['type'] == 'list')

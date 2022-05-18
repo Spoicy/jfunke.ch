@@ -4,7 +4,9 @@
     &.sub-right, &.sub-left {
         .main-img {
             flex: 0 0 40%;
-            margin: auto;
+            @media (min-width: 992px) {
+                margin: auto;
+            }
         }
         .main-text.text-split {
             flex: 0 0 60%;

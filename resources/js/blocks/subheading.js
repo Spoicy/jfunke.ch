@@ -7,15 +7,14 @@ if (document.querySelector('.block-subheading')) {
             document.querySelectorAll('.block-subheading .main-img .img-inner').forEach(item => {
                 child = item.childNodes[1];
                 item.classList.add('overflow-hidden');
-                child.classList.add('center-y');
+                child.classList.add('center-3d');
             });
             mode = 1;
         } else if (window.innerWidth >= 992 && mode == 1) {
             document.querySelectorAll('.block-subheading .main-img .img-inner').forEach(item => {
                 child = item.childNodes[1];
                 item.classList.remove('overflow-hidden');
-                child.classList.remove('center-y');
-                child.classList.remove('center-x');
+                child.classList.remove('center-3d');
             });
             mode = 0;
         }
