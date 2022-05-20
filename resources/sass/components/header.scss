@@ -18,8 +18,11 @@
         display: flex;
         justify-content: space-between;
         padding: 2rem 1.5rem;
-        img {
+        .logo {
             width: 25%;
+            img {
+                width: 100%;
+            }
         }
         nav {
             font-family: 'Ubuntu', sans-serif;
@@ -64,7 +67,7 @@
     }
     @media (max-width: 767.98px) {
         .container {
-            img {
+            .logo {
                 width: 40%;
             }
         }

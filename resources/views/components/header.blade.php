@@ -11,7 +11,9 @@
 <header class="site-header bg-main">
     <a class="skip-nav" href="#main-content">Skip navgiation</a>
     <div class="container d-flex">
-        <img src="/img/logo.svg" alt="Logo">
+        <a class="logo" href="/">
+            <img src="/img/logo.svg" alt="Logo">
+        </a>
         <nav class="d-md-flex d-none">
             @foreach ($links as $key => $data)
                 @if ($key == $nav)
