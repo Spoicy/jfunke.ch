@@ -47,7 +47,7 @@
                         'Building unique and modern-looking websites using the basics has always been something that I\'ve enjoyed when doing webdev. Whether it\'s HTML, CSS, or JS, finding elegant solutions to make things look professional is one of the key factors necessary to be an experienced web developer.',
                         'In terms of frontend libraries and frameworks, I am currently in the process of learning Vue.js, as many of the open source projects I\'m interested in use it. In the future, I hope to also add React to my arsenal of technologies as well.'
                     ],
-                    'imgsrc' => 'https://spoicy.ch/upload/jfu/resume-frontend.jpg',
+                    'imgsrc' => 'https://spoicy.ch/upload/jfu/frontend.jpg',
                     'imgalt' => 'Image'
                 ],
                 [
