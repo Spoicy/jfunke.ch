@@ -36,7 +36,8 @@
                         'Many of my projects, including this very website, are built with PHP. My work experience gave me the opportunity to really delve deep into it, as well as how to work as efficiently as possible, using all of its quirks to my advantage. If you need a PHP specialist, I\'m sure that I won\'t disappoint.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/php.jpg',
-                    'imgalt' => 'Image'
+                    'imgalt' => 'Image',
+                    'imgcredit' => '<a href="">"PHP logo"</a> by Colin Viebrock is licensed under <a href="">CC BY-SA 4.0</a>'
                 ],
                 [
                     'type' => 'img',

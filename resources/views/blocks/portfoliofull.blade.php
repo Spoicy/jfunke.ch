@@ -18,7 +18,11 @@
             @endforeach
         @endif
         @if (isset($data['links']))
-            <h3>Links</h3>
+            @if (count($data['links']) > 1)
+                <h3>Links</h3>
+            @else
+                <h3>Link</h3>
+            @endif
             <div class="links">
                 @foreach ($data['links'] as $item)
                     <a href="{{$item['link']}}">

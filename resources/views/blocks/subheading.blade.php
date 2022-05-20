@@ -17,6 +17,9 @@
             <div class="main-img">
                 <div class="img-inner">
                     <img src="{{$subdata['imgsrc']}}" alt="{{$subdata['imgalt']}}" class="center-3d" name="subheading-img">
+                    @if (isset($subdata['imgcredit']))
+                        <span class="img-credit d-none">{!!$subdata['imgcredit']!!}</span>
+                    @endif
                 </div>
             </div>
         @elseif ($subdata['type'] == 'list')
