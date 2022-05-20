@@ -13,11 +13,14 @@ class Contact extends Controller
      */
     public static function processContact(Request $request) {
         $data = new \stdClass();
-        $data->text = $request->request->get('cMessage');
-        $data->replyto = $request->request->get('cEmail');
-        $data->firstname = $request->request->get('cFirstname');
-        $data->lastname = $request->request->get('cLastname');
-        $data->subject = $request->request->get('cSubject');
+        $fields = ['cMessage' => 'text', 'cEmail' => 'replyto', 'cFirstname' => 'firstname', 'cLastname' => 'lastname', 'cSubject' => 'subject'];
+        $bannedChars = ['‮'];
+        foreach ($fields as $key => $field) {
+            $temp = $request->request->get($key);
+            $temp = strip_tags($temp);
+            $temp = str_replace($bannedChars, '', $temp);
+            $data->$field = $temp;
+        }
         try {
             Mail::to('contact@jfunke.ch')->send(new ContactForm($data));
             return redirect('/contact')->with('status', 1);
