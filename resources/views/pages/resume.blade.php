@@ -16,7 +16,7 @@
             'block' => 'blocks/heading',
             'heading' => 'Resume',
             'text' => [
-                'On this page, you\'ll see the various languages, frameworks, tools and technologies that I have experience with. The ones I am most experienced with, have their own detailed section. A complete list of everything I know can be found near the bottom of the page.'
+                'On this page, you\'ll see the various languages, frameworks, tools, and technologies that I have experience with. The ones I am most experienced with have their own detailed section. A complete list of everything I know can be found near the bottom of the page.'
             ]
         ]
     ]
@@ -32,8 +32,8 @@
                     'textdir' => 'right',
                     'subheading' => 'PHP',
                     'text' => [
-                        'PHP has been my bread and butter ever since I first started learning it in school back in 2017. It\'s my goto language for whenever I want to get something done quickly, as it just feels like home and allows me to work at peak performance.',
-                        'Many of my projects, including this very website, are built with PHP. My work experience gave me the opportunity to really delve deep into it, and how to work as efficiently as possible, using all of its quirks to my advantage. If you need a PHP specialist, I\'m sure that I won\'t disappoint.'
+                        'PHP has been my bread and butter ever since I first started learning it in school back in 2017. It\'s my go-to language for whenever I want to get something done quickly, as it feels just like home and allows me to work at peak performance.',
+                        'Many of my projects, including this very website, are built with PHP. My work experience gave me the opportunity to really delve deep into it, as well as how to work as efficiently as possible, using all of its quirks to my advantage. If you need a PHP specialist, I\'m sure that I won\'t disappoint.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/php.jpg',
                     'imgalt' => 'Image'

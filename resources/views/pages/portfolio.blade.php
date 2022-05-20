@@ -46,7 +46,7 @@
         [
             'block' => 'blocks/portfoliocard',
             'name' => 'suprnova.dev',
-            'description' => 'A complete rework of Suprnova\'s linktree page.',
+            'description' => 'A complete rework of Suprnova\'s website.',
             'imgsrc' => 'https://spoicy.ch/upload/jfu/suprnova.png',
             'imgalt' => 'Project image',
             'link' => '/portfolio/suprnova-dev'

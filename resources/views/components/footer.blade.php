@@ -1,6 +1,6 @@
 <footer class="site-footer bg-accent">
     <div class="container d-flex">
-        <span>© 2022 by Jae Funke</span>
-        <span>Created with the <a class="anim-hover" href="https://laravel.com/">Laravel Framework</a></span>
+        <span>© 2022 Jae Funke</span>
+        <span>Powered by <a class="anim-hover" href="https://laravel.com/">Laravel</a></span>
     </div>
 </footer>

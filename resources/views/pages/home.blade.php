@@ -7,7 +7,7 @@
             'imgsrc' => '/img/banner.png',
             'imgalt' => 'Banner',
             'heading' => 'Hi there!',
-            'subtext' => 'I\'m Jae, a 21-year-old web developer that specializes in PHP and Backend Development.',
+            'subtext' => 'I\'m Jae, a 21-year-old web developer that specializes in PHP and backend development.',
             'textdir' => 'left'
         ]
     ]
@@ -19,7 +19,7 @@
             'block' => 'blocks/card',
             'type' => 'icon',
             'heading' => 'fa-solid fa-code',
-            'text' => 'I have multiple years in PHP Frameworks and Backend Development, and an interest in becoming experienced in Frontend.',
+            'text' => 'I have multiple years in PHP frameworks and backend development, as well as an interest in becoming experienced in Frontend.',
             'class' => 'card-light'
         ],
         [
@@ -33,7 +33,7 @@
             'block' => 'blocks/card',
             'type' => 'icon',
             'heading' => 'fa-solid fa-clipboard-check',
-            'text' => 'I\'m a dependable, hardworking and passionate developer that can adapt to any stack or technology that is required.',
+            'text' => 'I\'m a dependable, hardworking, and passionate developer that can adapt to any stack or technology that is required.',
             'class' => 'card-light'
         ]
     ]
@@ -44,7 +44,7 @@
         [
             'block' => 'blocks/offset',
             'heading' => 'About me',
-            'text' => 'Learn even more about what I do and who I am in my About section.',
+            'text' => 'Learn even more about what I do and who I am here.',
             'offset' => 'left',
             'imgpath' => '/img/imgtest.png',
             'button' => 'More about Jae',
@@ -58,7 +58,7 @@
         [
             'block' => 'blocks/offset',
             'heading' => 'Projects',
-            'text' => 'I\'ve worked on various projects and designs from Frontend to Backend, utilizing newly learned languages and technologies that I\'ve picked up over the past few years.',
+            'text' => 'I\'ve worked on various projects and designs from frontend to backend, utilizing newly learned languages and technologies that I\'ve picked up over the past few years.',
             'offset' => 'right',
             'imgpath' => '/img/imgtest.png',
             'button' => 'View portfolio',
@@ -72,10 +72,10 @@
         [
             'block' => 'blocks/offset',
             'heading' => 'Resume',
-            'text' => 'I\'ve picked up various technologies and languages over the years that I\'ve been in education, employment as well as in my own free time.',
+            'text' => 'I\'ve picked up various technologies and languages over the years that I\'ve been in education and employment, as well as in my own free time.',
             'offset' => 'left',
             'imgpath' => '/img/imgtest.png',
-            'button' => 'View Resume',
+            'button' => 'View resume',
             'link' => '/resume'
         ]
     ]
