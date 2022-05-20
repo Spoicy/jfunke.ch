@@ -67,7 +67,10 @@ Route::get('/contact/', function() {
     ]);
 });
 
-Route::post('/contact/submit', 'App\Http\Controllers\Contact@processContact');
+Route::middleware(['throttle:email'])->group(function() {
+    Route::post('/contact/submit', 'App\Http\Controllers\Contact@processContact');
+});
+
 
 Route::get('/resume/', function() {
     return view('webpage', [
