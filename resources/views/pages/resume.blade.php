@@ -16,7 +16,14 @@
             'block' => 'blocks/heading',
             'heading' => 'Resume',
             'text' => [
-                'On this page, you\'ll see the various languages, frameworks, tools, and technologies that I have experience with. The ones I am most experienced with have their own detailed section. A complete list of everything I know can be found near the bottom of the page.'
+                'On this page, you\'ll see the various languages, frameworks, tools, and technologies that I have experience with. The ones I am most experienced with have their own detailed section. A copy of my resume can be found right below, and a complete list of everything I know can be found near the bottom of the page.'
+            ],
+            'files' => [
+                [
+                    'name' => 'Resume',
+                    'type' => 'pdf',
+                    'path' => 'https://spoicy.ch/upload/jfu/resume_english.pdf'
+                ]
             ]
         ]
     ]
@@ -37,7 +44,7 @@
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/php.jpg',
                     'imgalt' => 'Image',
-                    'imgcredit' => '<a href="">"PHP logo"</a> by Colin Viebrock is licensed under <a href="">CC BY-SA 4.0</a>'
+                    'imgcredit' => '<a href="https://www.php.net/download-logos.php">"PHP logo"</a> by Colin Viebrock is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
                 ],
                 [
                     'type' => 'img',

@@ -41,6 +41,13 @@
                 @foreach ($subdata['text'] as $pg)
                     <p>{!!$pg!!}</p>
                 @endforeach
+                @if (isset($subdata['files']))
+                    <ul class="list-files">
+                        @foreach ($subdata['files'] as $file)
+                            <li><a href="{{$file['path']}}" target="_blank" download><i class="fa-solid fa-file-{{$file['type']}}"></i><span>{{$file['name']}}</span></a></li>
+                        @endforeach
+                    </ul>
+                @endif
             </div>
         @endif
     </div>
