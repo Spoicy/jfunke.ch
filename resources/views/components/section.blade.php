@@ -34,7 +34,7 @@
         $sectionClass .= ' first';
     }
 @endphp
-<div class="{{$sectionClass}}">
+<section class="{{$sectionClass}}">
 @if (count($blocks) > 0 && count($blocks) < 5)
     <div class="row">
         @foreach ($blocks as $data)
@@ -44,4 +44,4 @@
         @endforeach
     </div>
 @endif
-</div>
+</section>

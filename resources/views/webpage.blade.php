@@ -23,9 +23,9 @@
 <body>
     <div class="site-container bg-main">
         @include('components/header')
-        <div class="template-container" id="main-content">
+        <main class="template-container" id="main-content">
             @include($template, $data)
-        </div>
+        </main>
         @include('components/footer')
     </div>
     <script src="/js/app.js"></script>
