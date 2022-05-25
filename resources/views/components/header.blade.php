@@ -14,7 +14,7 @@
         <a class="logo" href="/">
             <img src="/img/logo.svg" alt="Logo">
         </a>
-        <nav class="d-md-flex d-none">
+        <nav class="nav-desktop d-md-flex d-none">
             @foreach ($links as $key => $data)
                 @if ($key == $nav)
                     <a class="link-active" href="{{$data[0]}}" id="{{$key}}">{{$data[1]}}</a>
@@ -23,5 +23,17 @@
                 @endif
             @endforeach
         </nav>
+        <button class="d-md-none d-flex menu-open" id="moButton" name="moButton"><i class="fa-solid fa-bars"></i></button>
     </div>
+    <nav class="nav-mobile" id="mPopout">
+        <button class="menu-close" id="mcButton" name="mcButton"><i class="fa-solid fa-xmark"></i></button>
+        @foreach ($links as $key => $data)
+            @if ($key == $nav)
+                <a class="link-active" href="{{$data[0]}}" id="{{$key}}">{{$data[1]}}</a>
+            @else
+                <a href="{{$data[0]}}" id="{{$key}}">{{$data[1]}}</a>
+            @endif
+        @endforeach
+    </nav>
+    <div class="background-dim" id="bDim"></div>
 </header>

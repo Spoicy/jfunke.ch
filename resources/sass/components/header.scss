@@ -24,45 +24,104 @@
                 width: 100%;
             }
         }
-        nav {
-            font-family: 'Ubuntu', sans-serif;
-            align-items: flex-end;
-            a {
-                position: relative;
-                font-size: 1.5rem;
-                margin: 0 0.5rem;
+    }
+    .menu-open, .menu-close {
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+    .menu-open {
+        font-size: 2rem;
+        i {
+            margin: auto;
+        }
+    }
+    .menu-close {
+        font-size: 2.5rem;
+        visibility: hidden;
+        &.active {
+            visibility: visible;
+        }
+    }
+    .background-dim {
+        background-color: #000;
+        visibility: hidden;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        transition: visibility .5s, opacity .5s ease-in;
+        z-index: 100;
+        top: 0;
+        opacity: 0;
+        &.active {
+            opacity: .35;
+            visibility: visible;
+        }
+    }
+    nav {
+        font-family: 'Ubuntu', sans-serif;
+        align-items: flex-end;
+        a {
+            position: relative;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+        a:last-of-type {
+            margin-right: 0;
+        }
+        /* Code for underline animation from css-irl.info */
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $color-bg-accent;
+            opacity: 1;
+        }
+        &.nav-desktop a::after {
+            height: 0.125em;
+        }
+        &.nav-mobile a::after {
+            height: 0.1em;
+        }
+        a:not(.link-active)::after {
+            transition: opacity 300ms, transform 300ms;
+            transform: scale(0);
+            transform-origin: center;
+        }
+        a:not(.link-active):hover::after,
+        a:not(.link-active):focus::after {
+            transform: scale(1);
+        }
+        &.nav-mobile {
+            display: flex;
+            position: fixed;
+            padding: 0.5rem;
+            top: 0;
+            right: 0;
+            width: min(250px, 50%);
+            height: 100vh;
+            z-index: 101;
+            background-color: $color-bg-main;
+            flex-direction: column;
+            align-items: flex-start;
+            transform: translateX(100%);
+            transition: transform .5s ease-in;
+            &.active {
+                transform: translateX(0);
             }
-            a:last-of-type {
-                margin-right: 0;
-            }
-            /* Code for underline animation from css-irl.info */
-            a::after {
-                content: '';
+            button {
                 position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 0.125em;
-                background-color: $color-bg-accent;
-                opacity: 1;
-            }
-            a:not(.link-active)::after {
-                transition: opacity 300ms, transform 300ms;
-                transform: scale(0);
-                transform-origin: center;
-            }
-            a:not(.link-active):hover::after,
-            a:not(.link-active):focus::after {
-                transform: scale(1);
+                left: -42px;
+                top: -2px;
             }
         }
     }
     /* Media queries */
     @media (max-width: 991.98px) {
-        .container {
-            nav a {
-                font-size: 1.375rem;
-            }
+        .nav-desktop a {
+            font-size: 1.375rem;
         }
     }
     @media (max-width: 767.98px) {
@@ -70,6 +129,11 @@
             .logo {
                 width: 40%;
             }
+        }
+    }
+    @media (max-width: 649.98px) {
+        .container {
+            padding: 1.5rem 15px;
         }
     }
 }
