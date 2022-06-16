@@ -7,6 +7,9 @@
         "hResume" => ["/resume", "Resume"],
         "hContact" => ["/contact", "Contact"],
     ];
+    if (!isset($nav)) {
+        $nav = '';
+    }
 @endphp
 <header class="site-header bg-main">
     <a class="skip-nav" href="#main-content">Skip navgiation</a>
