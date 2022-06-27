@@ -2,6 +2,7 @@
 @use 'abstracts/background';
 @use 'abstracts/overflow';
 @use 'abstracts/button';
+@use 'abstracts/link';
 
 /* Pages & Templates */
 @use 'pages/webpage';
@@ -21,7 +22,7 @@
 @use 'blocks/portfoliofull';
 @use 'blocks/contactform';
 
-/* Variables */
+/* Partials */
 @use 'variables' as *;
 
 /* Scroll behavior */

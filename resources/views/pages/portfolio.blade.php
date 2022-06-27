@@ -53,3 +53,15 @@
         ]
     ]
 ])
+@include('components/section', [
+    'type' => 'normal',
+    'blocks' => [
+        [
+            'block' => 'blocks/text',
+            'text' => [
+                'If you\'re interested in working with me to create your next big website, please get in contact with me via the <a href="/contact" target="_blank">Contact</a> page. Whether that be complete overhauls or just a fresh coat of paint, I\'ll be glad to assist you on whatever needs to get done.',
+                'If you are looking for my programming side, feel free to visit my <a href="https://github.com/Spoicy" target="_blank">GitHub profile</a>. It contains most of my ongoing and finished projects, as well as all my contributions to other repositories.'
+            ]
+        ]
+    ]
+])

@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+a, a:hover {
+    color: $color-text-accent;
+    &.no-style {
+        text-decoration: none;
+        color: $color-text-main;
+    }
+}
