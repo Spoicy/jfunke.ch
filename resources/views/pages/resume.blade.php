@@ -71,7 +71,8 @@
                             'C#',
                             'Java',
                             'Bash/Shell',
-                            'Python'
+                            'Python',
+                            'Golang'
                         ],
                         'Frameworks/CMS' => [
                             'Laravel',
@@ -79,6 +80,7 @@
                             'Wordpress',
                             'Bootstrap',
                             'Drupal',
+                            'ASP.NET',
                             'Vue',
                             'Symfony'
                         ],
