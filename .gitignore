@@ -14,3 +14,4 @@ yarn-error.log
 /.idea
 /.vscode
 /config/database.php
+/config/log-viewer.php
