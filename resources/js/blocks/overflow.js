@@ -4,8 +4,13 @@ document.querySelectorAll('.overflow-hidden').forEach(item => {
 });
 
 function overflowUpdate(e) {
-    var parentwidth = e[0].target.clientWidth;
-    var child = e[0].target.childNodes[1];
+    if (Array.isArray(e)) {
+        var parentwidth = e[0].target.clientWidth;
+        var child = e[0].target.childNodes[1];
+    } else {
+        var parentwidth = e.clientWidth;
+        var child = e.childNodes[1];
+    }
     var height = child.clientHeight;
     var width = child.clientWidth;
     if (child.complete && child.naturalHeight !== 0) {
@@ -31,5 +36,11 @@ function overflowUpdate(e) {
                 child.style.height = "auto";
             }
         }
+    } else {
+        child.addEventListener('load', imageLoad);
     }
+}
+
+function imageLoad(e) {
+    overflowUpdate(e.target.parentElement);
 }
