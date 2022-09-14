@@ -16,10 +16,8 @@ function overflowUpdate(e) {
     if (child.complete && child.naturalHeight !== 0) {
         if (child.name == "offset-img" || child.name == "subheading-img") {
             var heightCheck = 250;
-            if (window.innerWidth < 768) {
+            if (window.innerWidth < 992) {
                 heightCheck = 150;
-            } else if (window.innerWidth < 992 && child.name == "offset-img") {
-                heightCheck = 300;
             }
         } else {
             var heightCheck = 500;

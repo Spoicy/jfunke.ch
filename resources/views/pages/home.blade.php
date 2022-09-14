@@ -60,7 +60,7 @@
             'heading' => 'Projects',
             'text' => 'I\'ve worked on various projects and designs from frontend to backend, utilizing newly learned languages and technologies that I\'ve picked up over the past few years.',
             'offset' => 'right',
-            'imgpath' => '/img/imgtest.png',
+            'imgpath' => 'https://spoicy.ch/upload/jfu/portfolio-banner.jpg',
             'button' => 'View portfolio',
             'link' => '/portfolio'
         ]
@@ -74,7 +74,7 @@
             'heading' => 'Resume',
             'text' => 'I\'ve picked up various technologies and languages over the years that I\'ve been in education and employment, as well as in my own free time.',
             'offset' => 'left',
-            'imgpath' => '/img/imgtest.png',
+            'imgpath' => 'https://spoicy.ch/upload/jfu/resume-banner-test.png',
             'button' => 'View resume',
             'link' => '/resume'
         ]
