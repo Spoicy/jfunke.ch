@@ -25,6 +25,9 @@ function overflowUpdate(e) {
                 heightCheck = 400;
             }
         }
+        if (child.name == "banner-img") {
+            heightCheck = heightCheck - 2;
+        }
         if (child.classList.contains("center-3d")) {
             if (height < heightCheck) {
                 child.style.height = "100%";
