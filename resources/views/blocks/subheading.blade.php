@@ -5,6 +5,9 @@
         } else {
             $textdir = '';
         }
+        if ($textdir && $subdata['type'] == 'img') {
+            $textdir .= ' anim-from-' . $subdata['textdir'] . ' show';
+        }
     @endphp
     <div class="block-subheading {{$textdir}}">
         @if ($subdata['type'] == 'img')
