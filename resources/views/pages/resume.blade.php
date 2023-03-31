@@ -22,7 +22,7 @@
                 [
                     'name' => 'Resume',
                     'type' => 'pdf',
-                    'path' => 'https://spoicy.ch/upload/jfu/resume_english.pdf'
+                    'path' => 'https://spoicy.ch/upload/jfu/resume-english.pdf'
                 ]
             ]
         ]
