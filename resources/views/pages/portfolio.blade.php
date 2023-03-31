@@ -50,6 +50,14 @@
             'imgsrc' => 'https://spoicy.ch/upload/jfu/suprnova.png',
             'imgalt' => 'Project image',
             'link' => '/portfolio/suprnova-dev'
+        ],
+        [
+            'block' => 'blocks/portfoliocard',
+            'name' => 'Moodle Plugins',
+            'description' => 'Various Moodle Plugins, developed for Kantonsschule Frauenfeld.',
+            'imgsrc' => '/img/imgtest.png',
+            'imgalt' => 'Project image',
+            'link' => '/portfolio/moodle'
         ]
     ]
 ])
