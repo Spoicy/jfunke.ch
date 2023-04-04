@@ -4,7 +4,7 @@
         [
             'block' => 'blocks/banner',
             'type' => 'normal',
-            'imgsrc' => '/img/imgtest.png',
+            'imgsrc' => 'https://spoicy.ch/upload/jfu/about-banner.png',
             'imgalt' => 'Banner'
         ]
     ]

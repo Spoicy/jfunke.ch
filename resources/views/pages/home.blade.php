@@ -46,7 +46,7 @@
             'heading' => 'About me',
             'text' => 'Learn even more about what I do and who I am here.',
             'offset' => 'left',
-            'imgpath' => '/img/imgtest.png',
+            'imgpath' => 'https://spoicy.ch/upload/jfu/about-banner.png',
             'button' => 'More about Jae',
             'link' => '/about'
         ]
