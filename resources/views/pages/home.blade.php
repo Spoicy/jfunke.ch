@@ -7,7 +7,7 @@
             'imgsrc' => '/img/banner.png',
             'imgalt' => 'Banner',
             'heading' => 'Hi there!',
-            'subtext' => 'I\'m Jae, a 21-year-old web developer that specializes in PHP and backend development.',
+            'subtext' => 'I\'m Jae, a 22-year-old web developer that specializes in PHP and backend development.',
             'textdir' => 'left'
         ]
     ]

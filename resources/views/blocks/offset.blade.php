@@ -2,6 +2,7 @@
 <div class="block-offset offset-{{$data['offset']}} anim-from-{{$data['offset']}} show row">
     <div class="main-img col-lg-4 col-xs-12">
         <div class="img-inner overflow-hidden">
+            {{-- Stick to 4:3 for now --}}
             <img class="center-3d" src="{{$data['imgpath']}}" alt="" name="offset-img" style="width: 100%;">
             @if (isset($data['imgcredit']))
                 <span class="img-credit d-none">{{$data['imgcredit']}}</span>

@@ -55,12 +55,12 @@
                     'textdir' => 'right',
                     'subheading' => 'Speedrunning',
                     'text' => [
-                        'The goal of speedrunning is to complete a video game or an objective inside of a video game as quickly as possible. I\'ve been an active speedrunner for close to 10 years now, and the communityx surrounding it is what truly makes it something special.',
+                        'The goal of speedrunning is to complete a video game or an objective inside of a video game as quickly as possible. I\'ve been an active speedrunner for close to 10 years now, and the community surrounding it is what truly makes it something special.',
                         'Platforming games are my bread and butter and are the majority of my speedruns. Outside of that, I\'m also an active moderator and community member in multiple speedrunning communities, most notably <a href="https://www.speedrun.com/refunct" target="_blank">Refunct</a>, a short 3D platformer, and <a href="https://www.speedrun.com/powerwash_simulator" target="_blank">PowerWash Simulator</a>. ' .
                             'I was interviewed for an article about speedwashing, <a href="https://www.eurogamer.net/powerwash-simulators-speedrunning-scene-puts-both-time-and-water-under-extreme-pressure" target="_blank">which you can read about here</a>.'
                     ],
-                    'imgsrc' => '/img/imgtest.png',
-                    'imgalt' => 'Image'
+                    'imgsrc' => 'https://spoicy.ch/upload/jfu/about-speedrunning2.jpg',
+                    'imgalt' => 'Snapshot of a PowerWash Simulator Career run'
                 ]
             ]
         ]
