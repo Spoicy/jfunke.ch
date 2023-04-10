@@ -46,7 +46,7 @@
             'heading' => 'About me',
             'text' => 'Learn even more about what I do and who I am here.',
             'offset' => 'left',
-            'imgpath' => 'https://spoicy.ch/upload/jfu/about-banner.png',
+            'imgpath' => 'https://spoicy.ch/upload/jfu/about-banner-small.jpg',
             'button' => 'More about Jae',
             'link' => '/about'
         ]
@@ -60,7 +60,7 @@
             'heading' => 'Projects',
             'text' => 'I\'ve worked on various projects and designs from frontend to backend, utilizing newly learned languages and technologies that I\'ve picked up over the past few years.',
             'offset' => 'right',
-            'imgpath' => 'https://spoicy.ch/upload/jfu/portfolio-banner.jpg',
+            'imgpath' => 'https://spoicy.ch/upload/jfu/portfolio-banner-small.jpg',
             'button' => 'View portfolio',
             'link' => '/portfolio'
         ]
@@ -74,7 +74,7 @@
             'heading' => 'Resume',
             'text' => 'I\'ve picked up various technologies and languages over the years that I\'ve been in education and employment, as well as in my own free time.',
             'offset' => 'left',
-            'imgpath' => 'https://spoicy.ch/upload/jfu/resume-banner-test.png',
+            'imgpath' => 'https://spoicy.ch/upload/jfu/resume-banner-small.jpg',
             'button' => 'View resume',
             'link' => '/resume'
         ]

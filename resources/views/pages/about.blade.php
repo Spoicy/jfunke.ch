@@ -4,7 +4,7 @@
         [
             'block' => 'blocks/banner',
             'type' => 'normal',
-            'imgsrc' => 'https://spoicy.ch/upload/jfu/about-banner.png',
+            'imgsrc' => 'https://spoicy.ch/upload/jfu/about-banner.jpg',
             'imgalt' => 'Banner'
         ]
     ]
@@ -36,18 +36,18 @@
                         'I code frequently in my free time to work on projects that either further my knowledge in new technologies that I\'m interested in, or projects that assist me in visualizing or executing various parts of my own hobbies.',
                         'I love creating projects in languages that I\'m most familiar with, such as spoicy.ch and the very website you\'re currently reading this on, but there\'s always something fun and exciting about learning new technologies and languages, or even just other parts of the languages you\'ve never looked in depth at before. I always strive to make interesting products for myself and others, while simultaneously enlarging my resume with old and new technologies.'
                     ],
-                    'imgsrc' => '/img/imgtest.png',
+                    'imgsrc' => 'https://spoicy.ch/upload/jfu/about-coding.jpg',
                     'imgalt' => 'Image'
                 ],
                 [
                     'type' => 'img',
                     'textdir' => 'left',
-                    'subheading' => 'Fitness',
+                    'subheading' => 'Travel',
                     'text' => [
                         'I think staying in shape is one of the most important things in life, and I love taking in my surroundings and visiting new places.',
                         'I always have Pokémon GO open while I\'m walking around, as it gives me incentive to stay outside and visit new locations as I take in my surroundings.'
                     ],
-                    'imgsrc' => '/img/imgtest.png',
+                    'imgsrc' => 'https://spoicy.ch/upload/jfu/about-travel.jpg',
                     'imgalt' => 'Image'
                 ],
                 [
