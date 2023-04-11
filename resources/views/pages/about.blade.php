@@ -42,10 +42,10 @@
                 [
                     'type' => 'img',
                     'textdir' => 'left',
-                    'subheading' => 'Travel',
+                    'subheading' => 'Travelling',
                     'text' => [
-                        'I think staying in shape is one of the most important things in life, and I love taking in my surroundings and visiting new places.',
-                        'I always have Pokémon GO open while I\'m walking around, as it gives me incentive to stay outside and visit new locations as I take in my surroundings.'
+                        'I love to travel around and explore places that I\'ve never been to before. Whenever I get a chance to, I pick a new place and spend my afternoon taking in the surroundings.',
+                        'While I\'m out exploring, I like to have my phone open and play Pokémon GO. It provides the perfect incentive to explore every last inch of a place, while simultaneously being rewarded for staying in shape.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/about-travel.jpg',
                     'imgalt' => 'Image'
