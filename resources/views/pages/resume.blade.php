@@ -4,7 +4,7 @@
         [
             'block' => 'blocks/banner',
             'type' => 'normal',
-            'imgsrc' => 'https://spoicy.ch/upload/jfu/resume-banner-test.png',
+            'imgsrc' => 'https://spoicy.ch/upload/jfu/resume-banner.jpg',
             'imgalt' => 'Banner'
         ]
     ]
@@ -22,7 +22,7 @@
                 [
                     'name' => 'Resume',
                     'type' => 'pdf',
-                    'path' => 'https://spoicy.ch/upload/jfu/resume_english.pdf'
+                    'path' => 'https://spoicy.ch/upload/jfu/resume-english.pdf'
                 ]
             ]
         ]
