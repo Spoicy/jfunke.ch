@@ -145,4 +145,21 @@
             padding: 1.5rem 15px;
         }
     }
+
+    @supports (-webkit-touch-callout: none) {
+        nav.nav-mobile button {
+            left: -76px;
+        }
+        .menu-open {
+            position: relative;
+            right: -15px;
+        }
+        nav.nav-mobile button,
+        .menu-open {
+            color: black;
+        }
+        .menuburger {
+            padding: 1.5rem 0.375rem;
+        }
+    }
 }
