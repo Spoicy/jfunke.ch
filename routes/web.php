@@ -48,6 +48,9 @@ Route::get('/portfolio/{name}', function($name) {
         case 'suprnova-dev':
             $title = 'suprnova.dev';
             break;
+        case 'moodle':
+            $title = 'Moodle Plugins';
+            break;
         default:
             $title = 'Not found';
     }

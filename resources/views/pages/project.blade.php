@@ -106,6 +106,58 @@
             ]
         ])
         @break
+    @case('moodle')
+        @include('components/section', [
+            'type' => 'normal',
+            'blocks' => [
+                [
+                    'block' => 'blocks/portfoliofull',
+                    'name' => 'Moodle Plugins',
+                    'description' => [
+                        'Various Moodle Plugins developed for Kantonsschule Frauenfeld\'s infrastructure. These plugins aim to digitalize various processes of its infrastructure to decrease the amount of manual labor necessary to execute them. They integrate with the existing Moodle platform to reduce the learning curve for students and teachers in order for it to be used.',
+                        'FitCheck is a plugin for standardized P.E. testing which aims to reduce the amount of manual labor needed for grading. It achieves this by allowing students to upload their results to the plugin, which then can be graded automatically and graphed to visualize a student/class\'s progress. It also provides many management features for classes and tests, to give full control to the designated teachers.',
+                        'SA-Tool is a plugin for semester projects (Semesterarbeit) for the school\'s computer science department. It achieves its goal of drastically reducing the manual labor needed by centralizing the entire process on Moodle. The previously pen + paper and on-site process can then instead move much more swiftly through each step, improving efficiency.'
+                    ],
+                    'gallery' => [
+                        [
+                            'imgsrc' => 'https://spoicy.ch/upload/jfu/fitcheck-home.jpg',
+                            'imgalt' => 'Image'
+                        ],
+                        [
+                            'imgsrc' => 'https://spoicy.ch/upload/jfu/fitcheck-graph.jpg',
+                            'imgalt' => 'Image'
+                        ],
+                        [
+                            'imgsrc' => 'https://spoicy.ch/upload/jfu/fitcheck-totalgraph.jpg',
+                            'imgalt' => 'Image'
+                        ],
+                        [
+                            'imgsrc' => 'https://spoicy.ch/upload/jfu/fitcheck-upload.jpg',
+                            'imgalt' => 'Image'
+                        ],
+                        [
+                            'imgsrc' => 'https://spoicy.ch/upload/jfu/satool-teacherhome.jpg',
+                            'imgalt' => 'Image'
+                        ],
+                        [
+                            'imgsrc' => 'https://spoicy.ch/upload/jfu/satool-projdef.jpg',
+                            'imgalt' => 'Image'
+                        ],
+                    ],
+                    'links' => [
+                        [
+                            'link' => 'https://github.com/Spoicy/fitcheck',
+                            'linkname' => 'FitCheck'
+                        ],
+                        [
+                            'link' => 'https://github.com/Spoicy/satool',
+                            'linkname' => 'SA-Tool'
+                        ]
+                    ],
+                ]
+            ]
+        ])
+        @break
     @default
         @include('components/section', [
             'type' => 'normal',

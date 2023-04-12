@@ -25,7 +25,7 @@
             @endif
             <div class="links">
                 @foreach ($data['links'] as $item)
-                    <a href="{{$item['link']}}">
+                    <a href="{{$item['link']}}" target="_blank">
                         @if (isset($item['linkname']))
                             {{$item['linkname']}}
                         @else
