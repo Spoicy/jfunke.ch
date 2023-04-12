@@ -30,6 +30,7 @@
 ])
 @include('components/section', [
     'type' => 'normal',
+    'gap' => 'compact',
     'blocks' => [
         [
             'block' => 'blocks/subheading',
@@ -58,43 +59,66 @@
                     'imgalt' => 'Image'
                 ],
                 [
-                    'type' => 'list',
+                    'type' => 'text',
                     'textdir' => 'left',
                     'subheading' => 'Complete list',
-                    'text' => 'Here is a complete list of everything I know. The list is sorted by how experienced I am with the specified technology.',
-                    'list' => [
-                        'Languages' => [
-                            'PHP',
-                            'HTML/CSS/SCSS',
-                            'SQL',
-                            'JavaScript',
-                            'C#',
-                            'Java',
-                            'Bash/Shell',
-                            'Python',
-                            'Golang'
-                        ],
-                        'Frameworks/CMS' => [
-                            'Laravel',
-                            'CC-Framework (defunct)',
-                            'Wordpress',
-                            'Bootstrap',
-                            'Drupal',
-                            'ASP.NET',
-                            'Vue',
-                            'Symfony'
-                        ],
-                        'Technologies/Tools' => [
-                            'Visual Studio Code',
-                            'DBeaver',
-                            'Plesk',
-                            'Jira',
-                            'Trello',
-                            'REST'
-                        ]
+                    'text' => [
+                        'Here is a complete list of everything I know. The list is sorted by how experienced I am with the specified technology.'
                     ]
                 ]
             ]
+        ]
+    ]
+])
+@include('components/section', [
+    'type' => 'normal',
+    'blocks' => [
+        [
+            'block' => 'blocks/card',
+            'type' => 'list',
+            'heading' => 'Languages',
+            'list' => [
+                'PHP',
+                'HTML/CSS/SCSS',
+                'SQL',
+                'JavaScript',
+                'C#',
+                'Java',
+                'Bash/Shell',
+                'Python',
+                'Golang'
+            ],
+            'class' => 'card-light'
+        ],
+        [
+            'block' => 'blocks/card',
+            'type' => 'list',
+            'heading' => 'Frameworks/CMS',
+            'list' => [
+                'Laravel',
+                'CC-Framework (defunct)',
+                'Wordpress',
+                'Bootstrap',
+                'Vue',
+                'Drupal',
+                'ASP.NET',
+                'Symfony'
+            ],
+            'class' => 'card-accent'
+        ],
+        [
+            'block' => 'blocks/card',
+            'type' => 'list',
+            'heading' => 'Technologies/Tools',
+            'list' => [
+                'Visual Studio Code',
+                'DBeaver',
+                'Plesk',
+                'Jira',
+                'Trello',
+                'REST'
+            ],
+            'class' => 'card-light'
         ]
     ]
 ])

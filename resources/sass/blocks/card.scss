@@ -9,14 +9,24 @@
         padding-bottom: 0.875rem;
         height: 100%;
         text-align: center;
+        &.list {
+            border-radius: 0.5rem;
+            height: auto;
+        }
         &.card-accent {
             background-color: $color-bg-accent;
+            h3 {
+                color: $color-text-main-dark;
+            }
         }
         &.card-neutral {
             background-color: $color-bg-neutral;
         }
         &.card-light {
             background-color: $color-bg-light;
+        }
+        h3 {
+            color: $color-text-main
         }
         p {
             margin-bottom: 0;
@@ -25,6 +35,21 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
+        }
+        .list-content {
+            box-shadow: inset 0 0 0.1875rem #555;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: $color-bg-main;
+            height: 100%;
+            ul {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        li {
+            list-style-type: none;
         }
     }
 }
