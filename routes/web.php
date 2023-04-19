@@ -39,45 +39,39 @@ Route::get('/portfolio/', function () {
 });
 /* TEMPORARY: Calls to database will be made here in final version */
 Route::get('/portfolio/{name}', function($name) {
-    switch ($name) {
-        case 'spoicy':
-            $title = 'spoicy.ch';
-            break;
-        case 'jfunke':
-            $yaml = Yaml::parse(file_get_contents(asset('/yaml/project/jfunke.yaml')))['project'];
-            $data = [
-                'block' => 'blocks/portfoliofull',
-                'name' => $yaml['name'],
-                'description' => [],
-                'gallery' => []
-            ];
-            $keys = ['description', 'gallery'];
-            foreach ($keys as $key) {
-                foreach ($yaml[$key] as $item) {
-                    array_push($data[$key], $item);
-                }
-            }
-            return view('webpage', [
-                'title' => $yaml['name'],
-                'template' => 'pages/project',
-                'nav' => 'hPortfolio',
-                'data' => ['name' => $name, 'yaml' => $data]
-            ]);
-            break;
-        case 'suprnova-dev':
-            $title = 'suprnova.dev';
-            break;
-        case 'moodle':
-            $title = 'Moodle Plugins';
-            break;
-        default:
-            $title = 'Not found';
+    $yaml = Yaml::parse(file_get_contents(asset("/yaml/project/$name.yaml")))['project'];
+    if (!$yaml) {
+        return view('webpage', [
+            'title' => 'Not found',
+            'template' => 'pages/project',
+            'nav' => 'hPortfolio',
+            'data' => ['yaml' => [
+                'block' => 'blocks/heading',
+                'heading' => 'Project not found',
+                'text' => ['No project was found at this URL.'],
+                'textdir' => 'left'
+            ]]
+        ]);
+    }
+    $data = [
+        'block' => 'blocks/portfoliofull',
+        'name' => $yaml['name'],
+    ];
+    $keys = ['description', 'gallery', 'links', 'initial', 'finish'];
+    foreach ($keys as $key) {
+        if (!isset($yaml[$key])) {
+            continue;
+        }
+        $data[$key] = [];
+        foreach ($yaml[$key] as $item) {
+            array_push($data[$key], $item);
+        }
     }
     return view('webpage', [
-        'title' => $title,
+        'title' => $yaml['name'],
         'template' => 'pages/project',
         'nav' => 'hPortfolio',
-        'data' => ['name' => $name]
+        'data' => ['yaml' => $data]
     ]);
 });
 

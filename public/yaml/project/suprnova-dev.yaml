@@ -1,0 +1,19 @@
+project:
+  name: "suprnova.dev"
+  description:
+    - "A website for the GitHub user Suprnova. It displays all of the projects he's worked on over the years in order of importance."
+  gallery:
+    - imgsrc: "https://spoicy.ch/upload/jfu/suprnova.png"
+      imgalt: "Desktop view"
+    - imgsrc: "https://spoicy.ch/upload/jfu/suprnova-mobile.png"
+      imgalt: "Mobile view"
+  initial:
+    - "The former state of the website was not too far off the planned final product, however there were some key things that needed to be improved upon."
+    - "The website was not at all responsive on mobile or any other non-desktop resolution. Text went over the image, the image stretched along with the height and width. Some of the other things, like the special animations, were poorly implemented. Suprnova also requested a new grid layout for the projects."
+  finish:
+    - "The final product is a website similar to the previous iteration, but built almost completely from scratch in order to improve the site as much as possible. The new project grid layout was made as per specifications by the client, where every tile is sorted by importance by size. The final site is also completely responsive on every consumer device available."
+  links:
+    - link: "https://suprnova.dev"
+      linkname: "suprnova.dev"
+    - link: "https://github.com/Suprnova"
+      linkname: "Suprnova's GitHub"

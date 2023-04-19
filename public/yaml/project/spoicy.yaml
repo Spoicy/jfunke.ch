@@ -1,0 +1,19 @@
+project:
+  name: "spoicy.ch"
+  description:
+    - "This website is my own mini-project haven, where I build ideas I have for programming with a very minimalistic layout. It's all about coding here, stunning design is not a priority for any of these mini-projects."
+    - "The projects here are mainly PHP, with a few JavaScript ones sprinkled throughout. You can read my blog below, where I document my various projects and the successes/struggles that come with coding them."
+  gallery:
+    - imgsrc: "https://spoicy.ch/upload/jfu/spoicy.png"
+      imgalt: "Social Media page of spoicy.ch"
+    - imgsrc: "https://spoicy.ch/upload/jfu/spoicy-blog.png"
+      imgalt: "Blog page of spoicy.ch"
+    - imgsrc: "https://spoicy.ch/upload/jfu/spoicy-jsf.png"
+      imgalt: "JavaScript Framework page of spoicy.ch"
+    - imgsrc: "https://spoicy.ch/upload/jfu/spoicy-vanilla-mobile.png"
+      imgalt: "Mobile view of Vanilla JS page of spoicy.ch"
+  links:
+    - link: "https://spoicy.ch/"
+      linkname: "spoicy.ch"
+    - link: "https://spoicy.ch/blog"
+      linkname: "Blog"
