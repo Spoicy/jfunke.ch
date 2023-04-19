@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Yaml\Yaml;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +44,25 @@ Route::get('/portfolio/{name}', function($name) {
             $title = 'spoicy.ch';
             break;
         case 'jfunke':
-            $title = 'jfunke.ch';
+            $yaml = Yaml::parse(file_get_contents(asset('/yaml/project/jfunke.yaml')))['project'];
+            $data = [
+                'block' => 'blocks/portfoliofull',
+                'name' => $yaml['name'],
+                'description' => [],
+                'gallery' => []
+            ];
+            $keys = ['description', 'gallery'];
+            foreach ($keys as $key) {
+                foreach ($yaml[$key] as $item) {
+                    array_push($data[$key], $item);
+                }
+            }
+            return view('webpage', [
+                'title' => $yaml['name'],
+                'template' => 'pages/project',
+                'nav' => 'hPortfolio',
+                'data' => ['name' => $name, 'yaml' => $data]
+            ]);
             break;
         case 'suprnova-dev':
             $title = 'suprnova.dev';

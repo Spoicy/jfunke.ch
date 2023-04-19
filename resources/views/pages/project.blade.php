@@ -1,25 +1,14 @@
 {{-- TEMPORARY: Finalized project page will call from database or json for project, this is just to have a functional layout for now --}}
 {{-- TODO: Load page with data from database or json --}}
+@php
+    use Symfony\Component\Yaml\Yaml;
+@endphp
+
 @switch($data['name'])
     @case('jfunke')
         @include('components/section', [
             'type' => 'normal',
-            'blocks' => [
-                [
-                    'block' => 'blocks/portfoliofull',
-                    'name' => 'jfunke.ch',
-                    'description' => [
-                        'The very same website that you\'re viewing this entry from. I made this website completely from scratch using the Laravel framework using modern practices. Every developer needs their own webpage, and my goal was to go above and beyond as a technical showcase.',
-                        'Each page template is made up of multiple, smaller templates which consist of blocks and components. This way, a backend can be easily made to edit layouts, where only data needs to be passed through in order to display the entire layout. A completely overkill solution for such a basic website, but if there\'s any website I\'m going to overengineer, it\'s my own.'
-                    ],
-                    'gallery' => [
-                        [
-                            'imgsrc' => 'https://spoicy.ch/upload/jfu/jfunke.png',
-                            'imgalt' => 'Screenshot of homepage'
-                        ]
-                    ],
-                ]
-            ]
+            'blocks' => [ $data['yaml'] ]
         ])
         @break
     @case('spoicy')
