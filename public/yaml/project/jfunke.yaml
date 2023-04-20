@@ -6,3 +6,6 @@ project:
   gallery:
     - imgsrc: "https://spoicy.ch/upload/jfu/jfunke.png"
       imgalt: "Screenshot of homepage"
+  links:
+    - link: "https://github.com/Spoicy/jfunke.ch"
+      linkname: "Source Code"
