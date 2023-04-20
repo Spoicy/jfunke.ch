@@ -35,7 +35,7 @@
     }
 @endphp
 <section class="{{$sectionClass}}">
-@if (count($blocks) > 0 && count($blocks) < 5)
+@if ((count($blocks) > 0 && count($blocks) < 5) || (isset($limit) && !$limit))
     <div class="row">
         @foreach ($blocks as $data)
             <div class="{{$classes}}">
