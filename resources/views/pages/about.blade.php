@@ -17,7 +17,8 @@
             'textdir' => 'left',
             'heading' => 'About me',
             'text' => [
-                'I\'m 22 years old, non-binary and I\'ve always had an interest in computers. Ever since I got my first computer at 5 years old, it always boggled my mind how everything functioned. The browser I used to surf the net, the Flash games on Kongregate that I played day in and day out, the programs that magically did whatever I needed them to do. I always wanted to make games and programs of my own from the very start. Now that I\'m an adult and with multiple years of coding under my belt, I can confidently say I\'ve done my younger self proud.'
+                'I\'m 22 years old, non-binary and I\'ve always had an interest in computers. Ever since I got my first computer at 5 years old, it always boggled my mind how everything functioned. The browser I used to surf the net, the Flash games on Kongregate that I played day in and day out, the programs that magically did whatever I needed them to do. I always wanted to make games and programs of my own from the very start. Now that I\'m an adult and with multiple years of coding under my belt, I can confidently say I\'ve done my younger self proud.',
+                'I\'m currently enrolled at Lucerne University of Applied Sciences and Arts for a Bachelor\'s in Computer Science, majoring in Software Engineering & DevOps.'
             ]
         ]
     ]
