@@ -50,10 +50,10 @@
                 [
                     'type' => 'img',
                     'textdir' => 'left',
-                    'subheading' => 'Frontend',
+                    'subheading' => 'Full-Stack Development',
                     'text' => [
-                        'Building unique and modern-looking websites using the basics has always been something that I\'ve enjoyed when doing webdev. Whether it\'s HTML, CSS, or JS, finding elegant solutions to make things look professional is one of the key factors necessary to be an experienced web developer.',
-                        'In terms of frontend libraries and frameworks, I am currently in the process of learning Vue.js, as many of the open source projects I\'m interested in use it. In the future, I hope to also add React to my arsenal of technologies as well.'
+                        'Over the course of my many personal projects and my studies at HSLU, I\'ve become quite proficient at development across the whole stack. Whether it\'s PHP, Java, Python or any combination of langauges, I\'m able to code in whatever tech stack is required.',
+                        'Whether the project is a FastAPI service, a SPA application with React, or a fully fledged web application with Laravel, I can deliver quality, maintainable code without an issue.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/frontend.jpg',
                     'imgalt' => 'Image'
@@ -80,10 +80,10 @@
             'list' => [
                 'PHP',
                 'HTML/CSS/SCSS',
-                'SQL',
-                'JavaScript',
-                'C#',
+                'JavaScript/TypeScript',
                 'Java',
+                'SQL',
+                'C#',
                 'Bash/Shell',
                 'Python',
                 'Golang'
@@ -100,6 +100,8 @@
                 'Wordpress',
                 'Bootstrap',
                 'Vue',
+                'Angular',
+                'React',
                 'Drupal',
                 'ASP.NET',
                 'Symfony'
@@ -111,12 +113,16 @@
             'type' => 'list',
             'heading' => 'Technologies/Tools',
             'list' => [
+                'REST',
                 'Visual Studio Code',
+                'Codex',
+                'Claude Code',
                 'DBeaver',
-                'Plesk',
                 'Jira',
-                'Trello',
-                'REST'
+                'Azure',
+                'AWS',
+                'Plesk',
+                'Trello'
             ],
             'class' => 'card-light'
         ]

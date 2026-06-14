@@ -18,7 +18,7 @@
             'heading' => 'About me',
             'text' => [
                 'I\'m 25 years old and I\'ve always had an interest in computers. Ever since I got my first computer at 5 years old, it always boggled my mind how everything functioned. The browser I used to surf the net, the Flash games on Kongregate that I played day in and day out, the programs that magically did whatever I needed them to do. I always wanted to make games and programs of my own from the very start. Now that I\'m an adult and with multiple years of coding under my belt, I can confidently say I\'ve done my younger self proud.',
-                'I\'ve currently completed my Bachelor\'s degree in IT Lucerne University of Applied Sciences and Arts with a major in Software Engineering & DevOps, and I am looking for work.'
+                'I\'ve currently completed my Bachelor\'s degree in IT at the Lucerne University of Applied Sciences and Arts, with a major in Software Engineering & DevOps, and I am looking for work.'
             ]
         ]
     ]
@@ -35,7 +35,8 @@
                     'subheading' => 'Coding',
                     'text' => [
                         'I code frequently in my free time to work on projects that either further my knowledge in new technologies that I\'m interested in, or projects that assist me in visualizing or executing various parts of my own hobbies.',
-                        'I love creating projects in languages that I\'m most familiar with, such as spoicy.ch and the very website you\'re currently reading this on, but there\'s always something fun and exciting about learning new technologies and languages, or even just other parts of the languages you\'ve never looked in depth at before. I always strive to make interesting products for myself and others, while simultaneously enlarging my resume with old and new technologies.'
+                        'I love creating projects in languages that I\'m most familiar with, such as spoicy.ch and the very website you\'re currently reading this on, but there\'s always something fun and exciting about learning new technologies and languages, or even just other parts of the languages you\'ve never looked in depth at before. I always strive to make interesting products for myself and others, while simultaneously enlarging my resume with old and new technologies.',
+                        'I am currently working on a new service for the JoomGallery project, which integrates AI as a method to speed up the manual labor of tagging and describing photos.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/about-coding.jpg',
                     'imgalt' => 'Photo of me programming at my computer'
@@ -45,7 +46,7 @@
                     'textdir' => 'left',
                     'subheading' => 'Travelling',
                     'text' => [
-                        'I love to travel around and explore places that I\'ve never been to before. Whenever I get a chance to, I pick a new place and spend my afternoon taking in the surroundings.',
+                        'I love to travel around and explore places that I\'ve never been to before. Whenever I get a chance to, I pick a new place and spend my afternoon taking in the surroundings. There\'s nothing quite like spending time outside, taking a break from the everyday stress and coming back to your task revitalized and with a fresh prespective.',
                         'While I\'m out exploring, I like to have my phone open and play Pokémon GO. It provides the perfect incentive to explore every last inch of a place, while simultaneously being rewarded for staying in shape.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/about-travel.jpg',

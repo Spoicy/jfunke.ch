@@ -7,7 +7,7 @@
             'imgsrc' => '/img/banner.png',
             'imgalt' => 'Banner',
             'heading' => 'Hi there!',
-            'subtext' => 'I\'m Jae, a 25-year-old web developer that specializes in PHP and backend development.',
+            'subtext' => 'I\'m Jae, a 25-year-old software engineer that specializes in software design and full-stack development.',
             'textdir' => 'left'
         ]
     ]
@@ -19,14 +19,14 @@
             'block' => 'blocks/card',
             'type' => 'icon',
             'heading' => 'fa-solid fa-code',
-            'text' => 'I have multiple years in PHP frameworks and backend development, as well as an interest in becoming experienced in Frontend.',
+            'text' => 'I have multiple years of experience in web frameworks and full-stack development, alongside plenty of other tech stacks.',
             'class' => 'card-light'
         ],
         [
             'block' => 'blocks/card',
             'type' => 'icon',
             'heading' => 'fa-solid fa-graduation-cap',
-            'text' => 'I love learning new skills and tricks! I\'m always open to adding new web technologies and coding languages to my repertoire.',
+            'text' => 'I love learning new skills and tools! I\'m always open to adding new web technologies, tools and coding languages to my repertoire.',
             'class' => 'card-accent'
         ],
         [
