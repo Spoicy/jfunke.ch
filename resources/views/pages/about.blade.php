@@ -17,8 +17,8 @@
             'textdir' => 'left',
             'heading' => 'About me',
             'text' => [
-                'I\'m 22 years old, non-binary and I\'ve always had an interest in computers. Ever since I got my first computer at 5 years old, it always boggled my mind how everything functioned. The browser I used to surf the net, the Flash games on Kongregate that I played day in and day out, the programs that magically did whatever I needed them to do. I always wanted to make games and programs of my own from the very start. Now that I\'m an adult and with multiple years of coding under my belt, I can confidently say I\'ve done my younger self proud.',
-                'I\'m currently enrolled at Lucerne University of Applied Sciences and Arts for a Bachelor\'s in Computer Science, majoring in Software Engineering & DevOps.'
+                'I\'m 25 years old and I\'ve always had an interest in computers. Ever since I got my first computer at 5 years old, it always boggled my mind how everything functioned. The browser I used to surf the net, the Flash games on Kongregate that I played day in and day out, the programs that magically did whatever I needed them to do. I always wanted to make games and programs of my own from the very start. Now that I\'m an adult and with multiple years of coding under my belt, I can confidently say I\'ve done my younger self proud.',
+                'I\'ve currently completed my Bachelor\'s degree in IT Lucerne University of Applied Sciences and Arts with a major in Software Engineering & DevOps, and I am looking for work.'
             ]
         ]
     ]
@@ -38,7 +38,7 @@
                         'I love creating projects in languages that I\'m most familiar with, such as spoicy.ch and the very website you\'re currently reading this on, but there\'s always something fun and exciting about learning new technologies and languages, or even just other parts of the languages you\'ve never looked in depth at before. I always strive to make interesting products for myself and others, while simultaneously enlarging my resume with old and new technologies.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/about-coding.jpg',
-                    'imgalt' => 'Image'
+                    'imgalt' => 'Photo of me programming at my computer'
                 ],
                 [
                     'type' => 'img',
@@ -49,15 +49,16 @@
                         'While I\'m out exploring, I like to have my phone open and play Pokémon GO. It provides the perfect incentive to explore every last inch of a place, while simultaneously being rewarded for staying in shape.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/about-travel.jpg',
-                    'imgalt' => 'Image'
+                    'imgalt' => 'Selfie photo of me on a hiking trail'
                 ],
                 [
                     'type' => 'img',
                     'textdir' => 'right',
-                    'subheading' => 'Speedrunning',
+                    'subheading' => 'Speedrunning/Challenge Hunting',
                     'text' => [
                         'The goal of speedrunning is to complete a video game or an objective inside of a video game as quickly as possible. I\'ve been an active speedrunner for close to 10 years now, and the community surrounding it is what truly makes it something special.',
-                        'Platforming games are my bread and butter and are the majority of my speedruns. Outside of that, I\'m also an active moderator and community member in multiple speedrunning communities, most notably <a href="https://www.speedrun.com/refunct" target="_blank">Refunct</a>, a short 3D platformer, and <a href="https://www.speedrun.com/powerwash_simulator" target="_blank">PowerWash Simulator</a>. ' .
+                        'Additionally, I take part in a subset of gaming called "challenge hunting", where the goal is to complete incredibly difficult dev-intended challenging content in games.',
+                        'Platforming games are my bread and butter and are where I spend the majority of time speedrunning and challenge hunting. Outside of that, I\'m also an active moderator and community member in multiple communities, most notably <a href="https://cedb.me/">Challenge Enthusiasts</a>, a community centered around challenging games, <a href="https://www.speedrun.com/refunct" target="_blank">Refunct</a>, a short 3D platformer, and <a href="https://www.speedrun.com/powerwash_simulator" target="_blank">PowerWash Simulator</a>. ' .
                             'I was interviewed for an article about speedwashing, <a href="https://www.eurogamer.net/powerwash-simulators-speedrunning-scene-puts-both-time-and-water-under-extreme-pressure" target="_blank">which you can read about here</a>.'
                     ],
                     'imgsrc' => 'https://spoicy.ch/upload/jfu/about-speedrunning2.jpg',
