@@ -15,3 +15,4 @@ yarn-error.log
 /.vscode
 /config/database.php
 /config/log-viewer.php
+/public/vendor/log-viewer
